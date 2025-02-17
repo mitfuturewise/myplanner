@@ -1,0 +1,19 @@
+package Staging3;
+
+import java.awt.AWTException;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+public class Report extends Login {
+	People client = new People();
+
+	@Test
+	public void Documents() throws AWTException, InterruptedException {
+		 client.client();
+		 driver.findElement(By.xpath("(//a[@class=\"mat-tab-link mat-focus-indicator ng-star-inserted\"])[3]")).click();//report
+		 driver.findElement(By.xpath("(//span[@class=\"mat-button-wrapper\"])[4]")).click();//create report
+		 driver.findElement(By.xpath("//mat-expansion-panel-header[@aria-expanded=\"true\"]")).click();//expand portfolio summary
+		 driver.findElement(By.xpath("(//label[@class=\"mat-checkbox-layout\"])[1]")).click();
+	}
+}

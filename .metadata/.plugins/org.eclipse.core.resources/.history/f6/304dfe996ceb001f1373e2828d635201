@@ -1,0 +1,14 @@
+package Staging3;
+
+import java.awt.AWTException;
+
+import org.testng.annotations.Test;
+
+public class Report {
+	People client = new People();
+
+	@Test
+	public void Documents() throws AWTException, InterruptedException {
+		 client.client();
+	}
+}

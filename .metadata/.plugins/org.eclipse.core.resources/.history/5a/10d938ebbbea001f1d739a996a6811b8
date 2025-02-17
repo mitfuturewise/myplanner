@@ -1,0 +1,23 @@
+package Staging3;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+public class Documents extends Login {
+	People client = new People();
+
+	@Test
+	public void Documents() {
+		 client.client();
+		// TODO Auto-generated method stub
+		driver.findElement(By.xpath("")).click();//documents
+		driver.findElement(By.xpath("//*[@id=\"ui-documents-overview\"]/div/div[2]/div/div[1]/div[2]/button")).click();//
+		driver.findElement(By.xpath("")).click();//
+		driver.findElement(By.xpath("")).click();//
+		driver.findElement(By.xpath("")).click();//
+		driver.findElement(By.xpath("")).click();//
+		driver.findElement(By.xpath("")).click();//
+		driver.findElement(By.xpath("")).click();//
+	}
+
+}

@@ -1,0 +1,12 @@
+package Staging3;
+
+import org.testng.annotations.Test;
+
+public class Documents extends Login {
+	@Test
+	private void Documents() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

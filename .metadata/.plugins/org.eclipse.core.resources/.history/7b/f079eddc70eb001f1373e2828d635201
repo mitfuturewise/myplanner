@@ -1,0 +1,43 @@
+package Staging3;
+
+import java.awt.AWTException;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+public class Report extends Login {
+	People client = new People();
+
+	@Test
+	public void Documents() throws AWTException, InterruptedException {
+		 client.client();
+		 driver.findElement(By.xpath("(//a[@class=\"mat-tab-link mat-focus-indicator ng-star-inserted\"])[3]")).click();//report
+		 driver.findElement(By.xpath("(//span[@class=\"mat-button-wrapper\"])[4]")).click();//create report
+		 driver.findElement(By.xpath("//mat-expansion-panel-header[@aria-disabled=\"false\"][1]")).click();//expand portfolio summary
+		 driver.findElement(By.xpath("(//label[@class=\"mat-checkbox-layout\"])[1]")).click();//portfolio summary
+		 driver.findElement(By.xpath("//mat-expansion-panel-header[@aria-disabled=\"false\"][2]")).click();//expand portfolio summary
+		 driver.findElement(By.xpath("(//label[@class=\"mat-checkbox-layout\"])[1]")).click();
+		 driver.findElement(By.xpath("//mat-expansion-panel-header[@aria-disabled=\"false\"][3]")).click();//expand portfolio summary
+		 driver.findElement(By.xpath("(//label[@class=\"mat-checkbox-layout\"])[1]")).click();
+		 driver.findElement(By.xpath("//mat-expansion-panel-header[@aria-disabled=\"false\"][4]")).click();//expand portfolio summary
+		 driver.findElement(By.xpath("(//label[@class=\"mat-checkbox-layout\"])[1]")).click();
+		 driver.findElement(By.xpath("//mat-expansion-panel-header[@aria-disabled=\"false\"][5]")).click();//expand portfolio summary
+		 driver.findElement(By.xpath("(//label[@class=\"mat-checkbox-layout\"])[1]")).click();
+		 driver.findElement(By.xpath("//mat-expansion-panel-header[@aria-disabled=\"false\"][6]")).click();//expand portfolio summary
+		 driver.findElement(By.xpath("(//label[@class=\"mat-checkbox-layout\"])[1]")).click();
+		 driver.findElement(By.xpath("//mat-expansion-panel-header[@aria-disabled=\"false\"][7]")).click();//expand portfolio summary
+		 driver.findElement(By.xpath("(//label[@class=\"mat-checkbox-layout\"])[1]")).click();
+		 driver.findElement(By.xpath("//mat-expansion-panel-header[@aria-disabled=\"false\"][8]")).click();//expand portfolio summary
+		 driver.findElement(By.xpath("(//label[@class=\"mat-checkbox-layout\"])[1]")).click();
+		 driver.findElement(By.xpath("//mat-expansion-panel-header[@aria-disabled=\"false\"][9]")).click();//expand portfolio summary
+		 driver.findElement(By.xpath("(//label[@class=\"mat-checkbox-layout\"])[1]")).click();
+		 driver.findElement(By.xpath("//mat-expansion-panel-header[@aria-disabled=\"false\"][10]")).click();//expand portfolio summary
+		 driver.findElement(By.xpath("(//label[@class=\"mat-checkbox-layout\"])[1]")).click();
+		 driver.findElement(By.xpath("//mat-expansion-panel-header[@aria-disabled=\"false\"][11]")).click();//expand portfolio summary
+		 driver.findElement(By.xpath("(//label[@class=\"mat-checkbox-layout\"])[1]")).click();
+		 driver.findElement(By.xpath("//mat-expansion-panel-header[@aria-disabled=\"false\"][12]")).click();//expand portfolio summary
+		 driver.findElement(By.xpath("(//label[@class=\"mat-checkbox-layout\"])[1]")).click();
+		 driver.findElement(By.xpath("//mat-expansion-panel-header[@aria-disabled=\"false\"][13]")).click();//expand portfolio summary
+		 driver.findElement(By.xpath("(//label[@class=\"mat-checkbox-layout\"])[1]")).click();
+	}
+}

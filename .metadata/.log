@@ -1,0 +1,921 @@
+!SESSION 2025-02-14 12:06:01.433 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=17.0.12
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-14 12:06:06.405
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-14 12:07:30.577
+!MESSAGE Logback config file: C:\Users\HP\eclipse-workspace\Staging3\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-02-14 12:07:40.159
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.ide 4 4 2025-02-14 12:17:32.554
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Font.<init>(Font.java:111)
+	at org.eclipse.jface.resource.ArrayFontDescriptor.createFont(ArrayFontDescriptor.java:78)
+	at org.eclipse.epp.internal.mpc.ui.wizards.CatalogToolTip.createLabel(CatalogToolTip.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.CatalogToolTip.createToolTipArea(CatalogToolTip.java:58)
+	at org.eclipse.equinox.internal.p2.ui.discovery.util.GradientToolTip.createToolTipContentArea(GradientToolTip.java:60)
+	at org.eclipse.jface.window.ToolTip.toolTipShow(ToolTip.java:345)
+	at org.eclipse.jface.window.ToolTip.toolTipOpen(ToolTip.java:469)
+	at org.eclipse.jface.window.ToolTip.toolTipCreate(ToolTip.java:334)
+	at org.eclipse.jface.window.ToolTip$ToolTipOwnerControlListener.handleEvent(ToolTip.java:609)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.openWizardDialog(AbstractMarketplaceWizardCommand.java:146)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.execute(AbstractMarketplaceWizardCommand.java:73)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:277)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:98)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:298)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:232)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:165)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:444)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:442)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:464)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 12:32:22.979
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\523\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 62194 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--2023915547\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\523\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar org.testng.remote.RemoteTestNG -serport 62194 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--2023915547\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 12:34:49.900
+!MESSAGE Stop the socket server as it's still pending on accepting the client
+!SESSION 2025-02-14 12:50:19.237 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=17.0.12
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data file:/C:/Users/HP/eclipse-workspace/Staging3/
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-14 12:50:24.201
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-14 12:50:27.129
+!MESSAGE Logback config file: C:\Users\HP\eclipse-workspace\Staging3\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2025-02-14 12:50:36.250
+!MESSAGE Removing PartDescriptorImpl with the "org.testng.eclipse.ResultView" id and the "TestNG" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-02-14 12:50:36.324
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2025-02-14 12:51:09.801
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to read repository at https://download.eclipse.org/tools/cdt/releases/11.5/cdt-11.5.0/artifacts.xml.xz.
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.updateCache(CacheManager.java:453)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCacheFromFile(CacheManager.java:140)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.getLocalFile(XZedSimpleArtifactRepositoryFactory.java:65)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.load(XZedSimpleArtifactRepositoryFactory.java:89)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.load(XZedSimpleArtifactRepositoryFactory.java:42)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:791)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:476)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:157)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:79)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:791)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$12(MarketplaceCatalog.java:338)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.eclipse.core.runtime.CoreException: 
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryStatusHelper.wrap(RepositoryStatusHelper.java:179)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.checkException(FileReader.java:540)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:465)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:386)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:136)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:202)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.updateCache(CacheManager.java:424)
+	... 38 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2025-02-14 12:51:09.803
+!MESSAGE Unable to read repository at https://download.eclipse.org/tools/cdt/releases/11.5/cdt-11.5.0/artifacts.xml.xz.
+!STACK 1
+org.eclipse.core.runtime.CoreException: 
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryStatusHelper.wrap(RepositoryStatusHelper.java:179)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.checkException(FileReader.java:540)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:465)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:386)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:136)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:202)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.updateCache(CacheManager.java:424)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCacheFromFile(CacheManager.java:140)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.getLocalFile(XZedSimpleArtifactRepositoryFactory.java:65)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.load(XZedSimpleArtifactRepositoryFactory.java:89)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.load(XZedSimpleArtifactRepositoryFactory.java:42)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:791)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:476)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:157)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:79)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:791)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$12(MarketplaceCatalog.java:338)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+!SUBENTRY 2 unknown 8 1 2025-02-14 12:51:09.804
+!MESSAGE 
+!SESSION 2025-02-14 12:52:49.713 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=17.0.12
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data file:/C:/Users/HP/eclipse-workspace/Staging3/
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-14 12:52:54.367
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-14 12:52:57.058
+!MESSAGE Logback config file: C:\Users\HP\eclipse-workspace\Staging3\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-02-14 12:53:07.092
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 13:06:45.408
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64225 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1262355743\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar org.testng.remote.RemoteTestNG -serport 64225 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1262355743\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 13:11:32.289
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64544 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-125447219\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar org.testng.remote.RemoteTestNG -serport 64544 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-125447219\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 13:11:32.533
+!MESSAGE Stop the socket server as it's still pending on accepting the client
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 13:11:42.608
+!MESSAGE Stop the socket server as it's still pending on accepting the client
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 13:13:19.350
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64636 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--106820168\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 64636 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--106820168\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 13:14:54.469
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64730 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1898075702\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 64730 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1898075702\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 13:22:42.731
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 65349 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--989024204\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 65349 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--989024204\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 13:31:44.035
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49656 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-916618485\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 49656 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-916618485\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 13:33:17.416
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49873 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--436974118\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 49873 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--436974118\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 13:33:25.962
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49885 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-472202857\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 49885 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-472202857\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 13:33:38.222
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49901 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-2137947767\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 49901 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-2137947767\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 13:42:14.815
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50609 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1791921303\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 50609 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1791921303\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 13:51:40.433
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 51607 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1051116038\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 51607 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1051116038\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 15:16:32.347
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55010 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--2015005099\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 55010 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--2015005099\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 15:28:13.157
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55831 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-879042714\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 55831 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-879042714\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 15:38:55.270
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 56607 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-283987763\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 56607 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-283987763\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 15:40:33.094
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 56847 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1351277141\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 56847 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1351277141\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 15:42:18.996
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57123 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--271317627\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 57123 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--271317627\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 15:44:55.811
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57482 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1912915559\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 57482 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1912915559\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 16:19:45.024
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59961 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-2100740005\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 59961 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-2100740005\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 16:25:28.150
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60516 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-628597124\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 60516 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-628597124\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 16:42:40.116
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 61730 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--902644967\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 61730 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--902644967\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 16:45:51.486
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 62060 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1644781267\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 62060 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1644781267\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 16:51:22.150
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 62589 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-160163955\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 62589 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-160163955\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 16:56:11.692
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 63032 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--198008267\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 63032 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--198008267\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-14 17:00:16.720
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 63413 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--83400712\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 63413 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--83400712\testng-customsuite.xml
+!SESSION 2025-02-15 11:29:44.909 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=17.0.12
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-15 11:29:51.113
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-15 11:30:01.979
+!MESSAGE Logback config file: C:\Users\HP\eclipse-workspace\Staging3\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-02-15 11:30:14.513
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.testng.eclipse 1 0 2025-02-15 11:33:08.499
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 63878 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--493675565\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 63878 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--493675565\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-15 11:36:23.317
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64260 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1683210250\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 64260 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1683210250\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-15 11:55:42.858
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 65433 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--91094708\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 65433 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--91094708\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-15 12:16:48.186
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50639 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-689950493\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 50639 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-689950493\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-15 13:15:51.207
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55865 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--2045341117\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 55865 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--2045341117\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-15 13:18:19.159
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 56258 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--929002312\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 56258 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--929002312\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-15 13:20:40.875
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 56551 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-33086121\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 56551 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-33086121\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-15 13:23:26.610
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 56911 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1017649445\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 56911 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1017649445\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-15 13:35:25.937
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57852 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1505747259\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 57852 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1505747259\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-15 13:36:30.908
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58114 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1083585771\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 58114 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1083585771\testng-customsuite.xml
+!SESSION 2025-02-15 13:37:30.710 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=17.0.12
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-15 13:37:35.072
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-15 13:37:39.372
+!MESSAGE Logback config file: C:\Users\HP\eclipse-workspace\Staging3\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-02-15 13:37:49.499
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.testng.eclipse 1 0 2025-02-15 13:38:02.180
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58396 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--692091700\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 58396 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--692091700\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-15 13:39:37.992
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58640 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1479718671\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 58640 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1479718671\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-15 13:44:30.897
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59178 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--765059363\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 59178 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--765059363\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-15 13:46:09.156
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59600 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1014037873\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 59600 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1014037873\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-15 13:50:04.926
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60989 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1871909140\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 60989 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1871909140\testng-customsuite.xml
+!SESSION 2025-02-17 10:48:20.681 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=17.0.12
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-17 10:48:26.905
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-17 10:48:32.968
+!MESSAGE Logback config file: C:\Users\HP\eclipse-workspace\Staging3\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-02-17 10:48:42.793
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 10:52:28.829
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57104 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-21286531\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 57104 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-21286531\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 10:57:38.181
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57805 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--615858769\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 57805 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--615858769\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 10:58:51.087
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57972 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-80075371\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 57972 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-80075371\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 10:59:25.260
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58115 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1292849876\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 58115 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1292849876\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 12:56:48.093
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49189 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1254906508\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 49189 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1254906508\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 12:57:31.022
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49460 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--215052824\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 49460 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--215052824\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 12:58:55.683
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49986 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1702874470\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 49986 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1702874470\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 12:59:34.696
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50183 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-107351430\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 50183 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-107351430\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 13:00:44.163
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50445 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1836700334\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 50445 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1836700334\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 13:00:55.986
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50512 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1148566382\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 50512 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1148566382\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 13:01:56.386
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50969 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1429559376\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 50969 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1429559376\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 13:04:36.536
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 51481 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-906098369\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 51481 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-906098369\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 13:06:20.902
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 51702 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--83690340\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 51702 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--83690340\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 13:09:28.371
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52082 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1900134641\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 52082 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1900134641\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 13:16:52.277
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53288 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-686112299\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 53288 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-686112299\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 13:28:29.600
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 54204 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1954796867\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 54204 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1954796867\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 13:32:37.605
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55048 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1495309461\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 55048 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1495309461\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 13:37:07.332
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55624 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1423975846\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 55624 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1423975846\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 13:57:25.819
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57068 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1246629323\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 57068 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1246629323\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 14:05:36.317
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58316 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--70461396\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 58316 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--70461396\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 16:27:14.230
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57323 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1603549563\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 57323 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1603549563\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 16:28:12.470
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57565 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1074827954\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 57565 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1074827954\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 16:51:00.338
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 61346 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--280159487\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 61346 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--280159487\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 16:56:17.089
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 62758 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1514222709\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 62758 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1514222709\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 16:59:43.872
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 63572 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1223228303\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 63572 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1223228303\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 17:01:21.657
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64001 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-2017632632\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 64001 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-2017632632\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 17:12:01.341
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 65413 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--791870591\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 65413 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--791870591\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 17:16:21.826
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50150 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-786352429\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 50150 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-786352429\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 17:16:30.030
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50194 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1616271130\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 50194 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1616271130\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 17:18:36.447
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50531 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-31626684\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 50531 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-31626684\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 17:19:04.950
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea -javaagent:C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\482\0\.cp\jacocoagent.jar=includes=*,excludes=,exclclassloader=sun.reflect.DelegatingClassLoader,output=tcpclient,port=50626
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50627 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1313794247\testng-customsuite.xml
+java -ea -javaagent:C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\482\0\.cp\jacocoagent.jar=includes=*,excludes=,exclclassloader=sun.reflect.DelegatingClassLoader,output=tcpclient,port=50626 -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 50627 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1313794247\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 17:40:04.584
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53228 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--993691385\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 53228 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--993691385\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 17:41:46.468
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53515 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--594167140\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 53515 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--594167140\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 17:46:28.092
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 54202 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--429096182\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 54202 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--429096182\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 17:47:13.190
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 54377 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1440660879\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 54377 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-1440660879\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 17:48:40.109
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 54667 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1870983463\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 54667 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--1870983463\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-02-17 17:49:05.213
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 54785 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-258848531\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 54785 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse-258848531\testng-customsuite.xml
