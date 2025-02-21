@@ -28,11 +28,11 @@ public class Login {
 	        driver = new ChromeDriver();
 
 	        // Open the login page and perform login
-	        driver.get("https://staging3.ifanow.in/login");
+	        driver.get("https://test.ifanow.in/login");
 	        driver.manage().window().maximize();
 	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-	        driver.findElement(By.xpath("//input[@id='mat-input-0']")).sendKeys("sonesh.dedhia@manekfinancial.com");
-	        driver.findElement(By.xpath("//input[@id='mat-input-1']")).sendKeys("123#Manek@!");
+	        driver.findElement(By.xpath("//input[@id='mat-input-0']")).sendKeys("mitalikadam29052001@gmail.com");
+	        driver.findElement(By.xpath("//input[@id='mat-input-1']")).sendKeys("Ifanow@123");
 	        driver.findElement(By.xpath("//button[contains(@class, 'mainloginBtn')]")).click();
 	    }
 //	    @Test
