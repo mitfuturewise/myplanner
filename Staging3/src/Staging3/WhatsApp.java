@@ -18,14 +18,11 @@ import org.testng.annotations.Test;
 public class WhatsApp extends Login{
 	 private static int campaignCounter = 1;
 	 publish_next button = new publish_next();
+	 whatsapp_login whatsapp_login=new whatsapp_login();
 @Test
 public void whatsapp() throws InterruptedException {
 	TestListeners.setDriver(driver);
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-	driver.findElement(By.xpath("(//span[contains(.,\"WhatsApp\")])[3]")).click();//whatsapp click
-	Thread.sleep(2000);
-	driver.findElement(By.xpath("//a[contains(.,\"CAMPAIGNS\")]")).click();//click campaign
-	Thread.sleep(1000);
 	driver.findElement(By.xpath("//span[contains(.,\"New Campaign\")]")).click();//new campaign
 	//enter campaign name
 	if (campaignCounter > 100) {
