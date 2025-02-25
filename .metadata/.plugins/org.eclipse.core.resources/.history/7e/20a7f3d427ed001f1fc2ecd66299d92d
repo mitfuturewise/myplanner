@@ -1,8 +1,0 @@
-package Staging3;
-
-import org.testng.annotations.Listeners;
-
-@Listeners(TestListeners.class)
-public class Gamification {
-	
-}

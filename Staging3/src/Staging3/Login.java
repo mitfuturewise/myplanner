@@ -33,6 +33,8 @@ public class Login {
 	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	        driver.findElement(By.xpath("//input[@id='mat-input-0']")).sendKeys("mitalikadam29052001@gmail.com");
 	        driver.findElement(By.xpath("//input[@id='mat-input-1']")).sendKeys("Ifanow@123");
+//	        driver.findElement(By.xpath("//input[@id='mat-input-0']")).sendKeys("sonesh.dedhia@manekfinancial.com");
+//	        driver.findElement(By.xpath("//input[@id='mat-input-1']")).sendKeys("123#Manek@!");
 	        driver.findElement(By.xpath("//button[contains(@class, 'mainloginBtn')]")).click();
 	    }
 //	    @Test
