@@ -3,19 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Whatsapp.header">
+      <class name="createonfly.Buttons">
         <methods>
-          <include name="HeaderTextandAddVariablewithselectdapoint"/>
-          <include name="image1"/>
-          <include name="HeaderTextandAddVariablewithselectdapointandfallbackvalue"/>
-          <include name="document1"/>
-          <include name="video"/>
-          <include name="document"/>
-          <include name="video1"/>
-          <include name="image"/>
+          <include name="testbuttonsclickqr"/>
+          <include name="testbuttonsclickpn"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- Whatsapp.header -->
+      </class> <!-- createonfly.Buttons -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

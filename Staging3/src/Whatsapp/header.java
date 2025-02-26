@@ -263,7 +263,7 @@ public void HeaderTextandAddVariable() throws InterruptedException {
 	wfnp.whatsapp();
 	Thread.sleep(1000);
 	createcamp.newCampaign();
-	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	driver.findElement(By.xpath("(//mat-select[@aria-disabled='false'])[2]")).click();//select header dropdown
 	Thread.sleep(1000);
 	driver.findElement(By.xpath("(//span[@class=\"mat-option-text\"])[2]")).click();//enter text to header dropdown

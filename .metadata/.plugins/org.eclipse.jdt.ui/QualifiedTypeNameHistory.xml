@@ -11,4 +11,5 @@
     <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
     <fullyQualifiedTypeName name="Staging3.whatsapp_login"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+    <fullyQualifiedTypeName name="Whatsapp.newcampaign"/>
 </qualifiedTypeNameHistroy>
