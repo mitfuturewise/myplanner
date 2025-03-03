@@ -4,12 +4,16 @@
     <fullyQualifiedTypeName name="java.sql.Driver"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="Staging3.Report"/>
-    <fullyQualifiedTypeName name="org.testng.annotations.Listeners"/>
-    <fullyQualifiedTypeName name="Staging3.TestListeners"/>
     <fullyQualifiedTypeName name="Staging3.WhatsApp"/>
     <fullyQualifiedTypeName name="Staging3.Login"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
     <fullyQualifiedTypeName name="Staging3.whatsapp_login"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
     <fullyQualifiedTypeName name="Whatsapp.newcampaign"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.Listeners"/>
+    <fullyQualifiedTypeName name="Whatsapp.devtools"/>
+    <fullyQualifiedTypeName name="dev.failsafe.Timeout"/>
+    <fullyQualifiedTypeName name="createonfly.bodytext"/>
+    <fullyQualifiedTypeName name="Staging3.TestListeners"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 </qualifiedTypeNameHistroy>

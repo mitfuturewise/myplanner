@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="createonfly.Buttons">
+      <class name="Swiftchat.Create_Campagin">
         <methods>
-          <include name="testbuttonsclickqr"/>
-          <include name="testbuttonsclickpn"/>
-          <include name="setUp"/>
+          <include name="campaign2"/>
+          <include name="Dashboard"/>
         </methods>
-      </class> <!-- createonfly.Buttons -->
+      </class> <!-- Swiftchat.Create_Campagin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

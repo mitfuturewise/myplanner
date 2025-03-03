@@ -649,7 +649,6 @@ import Staging3.TestListeners;
 			wfnp.whatsapp();
 			createcamp.newCampaign();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			bodytext.bodytext();
 			Thread.sleep(1000);
 	    	driver.findElement(By.xpath("(//mat-select[@formcontrolname=\"selectedButtonType\"])")).click();//click on dropdown of buttons
 			Thread.sleep(1000);
@@ -669,7 +668,6 @@ import Staging3.TestListeners;
 			wfnp.whatsapp();
 			createcamp.newCampaign();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			bodytext.bodytext();
 			Thread.sleep(1000);
 	    	driver.findElement(By.xpath("(//mat-select[@formcontrolname=\"selectedButtonType\"])")).click();//click on dropdown of buttons
 			Thread.sleep(1000);
@@ -685,7 +683,6 @@ import Staging3.TestListeners;
 			wfnp.whatsapp();
 			createcamp.newCampaign();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			bodytext.bodytext();
 			Thread.sleep(1000);
 	    	driver.findElement(By.xpath("(//mat-select[@formcontrolname=\"selectedButtonType\"])")).click();//click on dropdown of buttons
 			Thread.sleep(1000);

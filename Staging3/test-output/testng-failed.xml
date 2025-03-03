@@ -1,77 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [MyTestSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="createonfly(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="createonfly.header">
+      <class name="Swiftchat.Create_Campagin">
         <methods>
-          <include name="HeaderTextandAddVariablewithselectdapointandfallbackvalue"/>
-          <include name="setUp"/>
+          <include name="campaign2"/>
+          <include name="Dashboard"/>
         </methods>
-      </class> <!-- createonfly.header -->
-      <class name="createonfly.body">
-        <methods>
-          <include name="selectdatapointandfallbackvalue"/>
-          <include name="selectdatapoint"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- createonfly.body -->
-      <class name="createonfly.Buttons">
-        <methods>
-          <include name="phonenumberbuttontextcontent"/>
-          <include name="quickurl"/>
-          <include name="testbuttonsclickqr"/>
-          <include name="testbuttonsclickpn"/>
-          <include name="testbuttonsclickwu"/>
-          <include name="setUp"/>
-          <include name="quickurlbuttontextcontent"/>
-        </methods>
-      </class> <!-- createonfly.Buttons -->
+      </class> <!-- Swiftchat.Create_Campagin -->
     </classes>
-  </test> <!-- createonfly(failed) -->
-  <test thread-count="5" name="Whatsapp(failed)">
-    <classes>
-      <class name="Whatsapp.header">
-        <methods>
-          <include name="HeaderTextandAddVariable"/>
-          <include name="image1"/>
-          <include name="HeaderTextandAddVariablewithselectdapointandfallbackvalue"/>
-          <include name="document1"/>
-          <include name="video"/>
-          <include name="document"/>
-          <include name="video1"/>
-          <include name="image"/>
-          <include name="HeaderTextandAddVariablewithselectdapoint"/>
-          <include name="headerisselectedasnone"/>
-          <include name="testWithFallbackValue"/>
-          <include name="textWithoutenteringanytext"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- Whatsapp.header -->
-      <class name="Whatsapp.Buttons">
-        <methods>
-          <include name="quickurl"/>
-          <include name="phonenumberbuttontext"/>
-          <include name="testbuttonsclickqr"/>
-          <include name="addwebsiteurlbuttontextcontent"/>
-          <include name="phonenumber"/>
-          <include name="addwebsiteurl"/>
-          <include name="testbuttonsclickpn"/>
-          <include name="testbuttonsclickwu"/>
-          <include name="quickurlbuttontextcontent"/>
-          <include name="setUp"/>
-          <include name="phonenumberbuttontextcontent"/>
-          <include name="addwebsiteurlbuttontext"/>
-        </methods>
-      </class> <!-- Whatsapp.Buttons -->
-      <class name="Whatsapp.body">
-        <methods>
-          <include name="selectdatapointandfallbackvalue"/>
-          <include name="selectdatapoint"/>
-          <include name="addvariable"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- Whatsapp.body -->
-    </classes>
-  </test> <!-- Whatsapp(failed) -->
-</suite> <!-- Failed suite [MyTestSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
