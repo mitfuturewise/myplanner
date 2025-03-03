@@ -50,21 +50,23 @@ public class Create_Template extends Dashboard {
 		 Thread.sleep(1000);
 		 driver.findElement(By.xpath("//span[contains(.,\"Custom button (6)\")]")).click();
 		 Thread.sleep(1000);
-		 driver.findElement(By.xpath("(//input[@type=\"text\"])[]")).click();
+		 driver.findElement(By.xpath("(//input[@type=\"text\"])[2]")).sendKeys("કૉલ");
 		 Thread.sleep(1000);
-		 driver.findElement(By.xpath("(//input[@type=\"text\"])[]")).click();
+		 driver.findElement(By.xpath("(//input[@type=\"text\"])[3]")).sendKeys("ભારત");
 		 Thread.sleep(1000);
-		 driver.findElement(By.xpath("(//input[@type=\"text\"])[]")).click();
+		 driver.findElement(By.xpath("(//input[@type=\"text\"])[4]")).sendKeys("9834549528");
 		 Thread.sleep(1000);
-		 driver.findElement(By.xpath("(//input[@type=\"text\"])[]")).click();
+		 driver.findElement(By.xpath("(//input[@type=\"text\"])[5]")).sendKeys("રીડાયરેક્ટ કરો");
 		 Thread.sleep(1000);
-		 driver.findElement(By.xpath("//input[@type=\"url\"]")).click();
+		 driver.findElement(By.xpath("//input[@type=\"url\"]")).sendKeys("https://my-planner.in/login");
 		 Thread.sleep(1000);
-		 driver.findElement(By.xpath("(//input[@type=\"text\"])[]")).click();
+		 driver.findElement(By.xpath("(//input[@type=\"text\"])[6]")).sendKeys("કૂપન");
 		 Thread.sleep(1000);
-		 driver.findElement(By.xpath("(//input[@type=\"text\"])[]")).click();
+		 driver.findElement(By.xpath("(//input[@type=\"text\"])[7]")).sendKeys("dhgfhg");
 		 Thread.sleep(1000);
-		 driver.findElement(By.xpath("(//input[@type=\"text\"])[]")).click();
+		 driver.findElement(By.xpath("(//input[@type=\"text\"])[8]")).sendKeys("શેર");
+		 Thread.sleep(1000);
+		 driver.findElement(By.xpath("(//span[contains(.,\"Create Template\")])[2]")).click();
 		 
 	}
 }

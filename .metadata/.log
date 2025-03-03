@@ -5179,3 +5179,11 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.testng.eclipse 1 0 2025-03-03 19:12:46.087
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar C:\Users\HP\Downloads\selenium-devtools-v133-4.29.0.jar C:\Users\HP\Downloads\json-20230227.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 62937 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--374861582\testng-customsuite.xml
+java -ea -classpath C:\Users\HP\eclipse\java-2024-032\eclipse\configuration\org.eclipse.osgi\531\0\.cp\lib\testng-remote.jar:C:\Users\HP\eclipse-workspace\Staging3\Staging3\bin:C:\Users\HP\eclipse-workspace\Staging3\Staging3\jar\selenium-server-4.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\HP\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\HP\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\HP\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\HP\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar:C:\Users\HP\Downloads\selenium-devtools-v133-4.29.0.jar:C:\Users\HP\Downloads\json-20230227.jar org.testng.remote.RemoteTestNG -serport 62937 -protocol json -d C:\Users\HP\eclipse-workspace\Staging3\Staging3\test-output C:\Users\HP\AppData\Local\Temp\testng-eclipse--374861582\testng-customsuite.xml
