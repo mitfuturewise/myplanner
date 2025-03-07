@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import Staging3.TestListeners;
 @Listeners (TestListeners.class)
 public class Create_Campagin extends Dashboard {
+	private static int campaignCounter = 1;
 	@Test(priority = 1)
 public void campagin() throws InterruptedException {
 	TestListeners.setDriver(driver);
@@ -18,8 +19,14 @@ public void campagin() throws InterruptedException {
 	 driver.findElement(By.xpath("//a[contains(.,\"Back\")]")).click();//click on back button
 	 Thread.sleep(1000);
 	 driver.findElement(By.xpath("//a[contains(.,\"Create Campaign\")]")).click();//click on create campaign
+	 if (campaignCounter > 100) {
+	        campaignCounter = 1;
+	    }
+	    // Build the campaign name
+	    String uniqueCampaignName = "Campaign_" + campaignCounter;
+	    campaignCounter++;
 	 Thread.sleep(1000);
-	 driver.findElement(By.xpath("//input[@type=\"text\"]")).sendKeys("test");//Enter campaign name
+	 driver.findElement(By.xpath("//input[@type=\"text\"]")).sendKeys(uniqueCampaignName);//Enter campaign name
 	 Thread.sleep(1000);
 	 driver.findElement(By.xpath("//span[contains(.,\"Select Template\")]")).click();//select template dropdown
 	 Thread.sleep(1000);

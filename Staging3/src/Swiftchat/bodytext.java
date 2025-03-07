@@ -21,7 +21,21 @@ public class bodytext extends Dashboard {
     public void bodytext() {
         // Initialize ChromeDriver (set the system property if needed)
         
-        String originalText = "પ્રિય {{1}}, [SIP ડ્રાઇવ ડેટ] પર, હું વર્ષમાં એક વાર આવતા SIP કા મહા કુંભ નામના રોકાણ અભિયાનનું આયોજન કરી રહ્યો છું! 🌟 એક દિવસમાં 500+ SIP! આ ઐતિહાસિક સંપત્તિ ચળવળનો ભાગ બનો. 🔥 નાણાકીય સ્વતંત્રતા તરફ એક સાહસિક પગલું ભરતા હજારો રોકાણકારો સાથે જોડાઓ! 📌 મર્યાદિત સમય - ફક્ત 24 કલાક! મારા 500 SIP રોકાણકારોમાંથી એક બનો! 👉 કૉલબેકની વિનંતી કરવા અને તમારી જગ્યા લૉક કરવા માટે નીચે ક્લિક કરો! અમને પસંદ કરવા બદલ આભાર. સાદર, {{2}}";
+        String originalText = "Dear {{1}}, {{2}},\r\n"
+        		+ "\r\n"
+        		+ "🚀 Exclusive Investment Opportunity Just for You!\r\n"
+        		+ "\r\n"
+        		+ "Your special offer code OFFER2025 is valid until March 31st!\r\n"
+        		+ "\r\n"
+        		+ "On [SIP Drive Date], I’m organizing SIP Ka Maha Kumbh – an exclusive, once-a-year investment drive! Our goal? 500+ SIPs in a single day!\r\n"
+        		+ "\r\n"
+        		+ "📈 Be part of this financial revolution and take a bold step towards long-term wealth creation!\r\n"
+        		+ "\r\n"
+        		+ "⚡ Limited Time – Only 24 Hours! Secure your spot among the 500 committed investors making a difference.\r\n"
+        		+ "\r\n"
+        		+ "💬 Click below to request a callback and reserve your place!\r\n"
+        		+ "\r\n"
+        		+ "Thank you for trusting us with your investment journey.";
         
         // Remove non-BMP characters
         String filteredText = removeNonBMP(originalText);

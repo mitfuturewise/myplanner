@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Swiftchat.bodytext">
+      <class name="Swiftchat.Create_Template">
         <methods>
-          <include name="bodytext"/>
           <include name="Dashboard"/>
+          <include name="template"/>
         </methods>
-      </class> <!-- Swiftchat.bodytext -->
+      </class> <!-- Swiftchat.Create_Template -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -16,4 +16,5 @@
     <fullyQualifiedTypeName name="Staging3.TestListeners"/>
     <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+    <fullyQualifiedTypeName name="Swiftchat.bodytext"/>
 </qualifiedTypeNameHistroy>
