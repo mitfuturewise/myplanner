@@ -5,21 +5,35 @@
     <classes>
       <class name="createonfly.header">
         <methods>
+          <include name="HeaderTextandAddVariable"/>
+          <include name="image1"/>
+          <include name="image"/>
+          <include name="document"/>
+          <include name="testWithFallbackValue"/>
           <include name="document1"/>
+          <include name="textWithoutenteringanytext"/>
+          <include name="video"/>
+          <include name="video1"/>
+          <include name="HeaderTextandAddVariablewithselectdapointandfallbackvalue"/>
           <include name="setUp"/>
+          <include name="HeaderTextandAddVariablewithselectdapoint"/>
         </methods>
       </class> <!-- createonfly.header -->
       <class name="createonfly.body">
         <methods>
           <include name="selectdatapointandfallbackvalue"/>
+          <include name="addvariable"/>
           <include name="selectdatapoint"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- createonfly.body -->
       <class name="createonfly.Buttons">
         <methods>
+          <include name="phonenumberbuttontextcontent"/>
+          <include name="quickurl"/>
           <include name="addwebsiteurl"/>
           <include name="testbuttonsclickqr"/>
+          <include name="addwebsiteurlbuttontext"/>
           <include name="testbuttonsclickpn"/>
           <include name="testbuttonsclickwu"/>
           <include name="setUp"/>
@@ -30,30 +44,43 @@
   </test> <!-- createonfly(failed) -->
   <test thread-count="5" name="Whatsapp(failed)">
     <classes>
-      <class name="Whatsapp.Buttons">
-        <methods>
-          <include name="testbuttonsclickqr"/>
-          <include name="testbuttonsclickpn"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- Whatsapp.Buttons -->
       <class name="Whatsapp.header">
         <methods>
+          <include name="HeaderTextandAddVariablewithselectdapoint"/>
           <include name="HeaderTextandAddVariable"/>
           <include name="image1"/>
+          <include name="testWithFallbackValue"/>
           <include name="HeaderTextandAddVariablewithselectdapointandfallbackvalue"/>
           <include name="document1"/>
+          <include name="textWithoutenteringanytext"/>
           <include name="video"/>
           <include name="document"/>
           <include name="video1"/>
           <include name="image"/>
-          <include name="HeaderTextandAddVariablewithselectdapoint"/>
-          <include name="headerisselectedasnone"/>
-          <include name="testWithFallbackValue"/>
-          <include name="textWithoutenteringanytext"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- Whatsapp.header -->
+      <class name="Whatsapp.Buttons">
+        <methods>
+          <include name="quickurl"/>
+          <include name="phonenumberbuttontext"/>
+          <include name="testbuttonsclickqr"/>
+          <include name="phonenumber"/>
+          <include name="testbuttonsclickpn"/>
+          <include name="testbuttonsclickwu"/>
+          <include name="quickurlbuttontextcontent"/>
+          <include name="setUp"/>
+          <include name="phonenumberbuttontextcontent"/>
+        </methods>
+      </class> <!-- Whatsapp.Buttons -->
+      <class name="Whatsapp.body">
+        <methods>
+          <include name="selectdatapointandfallbackvalue"/>
+          <include name="selectdatapoint"/>
+          <include name="addvariable"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Whatsapp.body -->
     </classes>
   </test> <!-- Whatsapp(failed) -->
 </suite> <!-- Failed suite [MyTestSuite] -->

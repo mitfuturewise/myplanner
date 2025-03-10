@@ -7,6 +7,7 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.time.Duration;
 import java.util.Optional;
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -52,52 +53,58 @@ import Staging3.TestListeners;
 			devTools.createSession();
 
 			// Use an AtomicInteger to store the response status code (-1 means not yet set)
-			AtomicInteger responseStatus = new AtomicInteger(-1);
-			 AtomicReference<String> expectedRequestId = new AtomicReference<>("");
+			// Atomic variables for thread-safe response tracking
+            AtomicInteger responseStatus = new AtomicInteger(-1);
+            AtomicReference<String> expectedRequestId = new AtomicReference<>("");
+            AtomicBoolean firstResponseProcessed = new AtomicBoolean(false); // Ensure only first response is used
 
-		     // Enable network tracking
-		     devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
+            // Enable network tracking
+            devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
 
-		     // Capture the request ID when the expected API call is sent
-		     devTools.addListener(Network.requestWillBeSent(), requestEvent -> {
-		         String requestUrl = requestEvent.getRequest().getUrl();
-		         if (requestUrl.startsWith(expectedUrlBase)) {
-		             expectedRequestId.set(requestEvent.getRequestId().toString());
-		             Reporter.log("Captured expected request ID: " + expectedRequestId.get());
-		         }
-		     });
+            // Capture the first request ID
+            devTools.addListener(Network.requestWillBeSent(), requestEvent -> {
+                String requestUrl = requestEvent.getRequest().getUrl();
+                if (requestUrl.startsWith(expectedUrlBase)) {
+                    expectedRequestId.set(requestEvent.getRequestId().toString());
+                    Reporter.log("Captured expected request ID: " + expectedRequestId.get());
+                }
+            });
 
-		     // Listen for network responses
-		     devTools.addListener(Network.responseReceived(), responseReceived -> {
-		         // Process only if this response belongs to our expected request
-		         if (!responseReceived.getRequestId().toString().equals(expectedRequestId.get())) {
-		             return;
-		         }
-		         Response res = responseReceived.getResponse();
-		         String actualUrl = res.getUrl();
-		         Reporter.log("Processing response from expected URL: " + actualUrl);
-		         try {
-		             // Retrieve the response body using the request ID from the event
-		             var requestId = responseReceived.getRequestId();
-		             String body = devTools.send(Network.getResponseBody(requestId)).getBody();
-		             Reporter.log("Response Body: " + body);
-		             // Parse the JSON and extract the "status" field
-		             JSONObject jsonResponse = new JSONObject(body);
-		             int statusFromBody = jsonResponse.getInt("status");
-		             Reporter.log("Status from API response body: " + statusFromBody);
-		             responseStatus.set(statusFromBody);
-		         } catch (Exception e) {
-		        	 Reporter.log("Error retrieving/parsing response body: " + e.getMessage());
-		         }
-		     });
+            // Listen for network responses
+            devTools.addListener(Network.responseReceived(), responseReceived -> {
+                // Process only the first API response received
+                if (firstResponseProcessed.get()) {
+                    return; // Ignore any second response
+                }
 
-			// Click the "Next" button to trigger the API call
-			driver.findElement(By.xpath("(//span[contains(.,\" NEXT STEP \")])[2]")).click();
+                Response res = responseReceived.getResponse();
+                String actualUrl = res.getUrl();
+                Reporter.log("Processing response from expected URL: " + actualUrl);
 
-			// Wait until the API response for the expected URL is received (responseStatus != -1)
-			new WebDriverWait(driver, Duration.ofSeconds(30))
-			    .until(d -> responseStatus.get() != -1);
+                try {
+                    // Retrieve the response body
+                    var requestId = responseReceived.getRequestId();
+                    String body = devTools.send(Network.getResponseBody(requestId)).getBody();
+                    Reporter.log("Response Body: " + body);
 
+                    // Parse JSON and extract status field
+                    JSONObject jsonResponse = new JSONObject(body);
+                    int statusFromBody = jsonResponse.getInt("status");
+                    Reporter.log("Status from API response body: " + statusFromBody);
+
+                    responseStatus.set(statusFromBody);
+                    firstResponseProcessed.set(true); // Mark first response as processed
+                } catch (Exception e) {
+                    Reporter.log("Error retrieving/parsing response body: " + e.getMessage());
+                }
+            });
+
+            // Click the "Next" button to trigger API calls
+            driver.findElement(By.xpath("(//span[contains(.,\" NEXT STEP \")])[2]")).click();
+
+            // ✅ **Fixed WebDriverWait to wait until the first response is processed**
+            new WebDriverWait(driver, Duration.ofSeconds(30))
+                .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
 			// Check if the API response status is 200 before clicking the next button
 			if (responseStatus.get() == 500) {
 //			    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
@@ -128,52 +135,58 @@ import Staging3.TestListeners;
 			devTools.createSession();
 
 			// Use an AtomicInteger to store the response status code (-1 means not yet set)
-			AtomicInteger responseStatus = new AtomicInteger(-1);
-			 AtomicReference<String> expectedRequestId = new AtomicReference<>("");
+			// Atomic variables for thread-safe response tracking
+            AtomicInteger responseStatus = new AtomicInteger(-1);
+            AtomicReference<String> expectedRequestId = new AtomicReference<>("");
+            AtomicBoolean firstResponseProcessed = new AtomicBoolean(false); // Ensure only first response is used
 
-		     // Enable network tracking
-		     devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
+            // Enable network tracking
+            devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
 
-		     // Capture the request ID when the expected API call is sent
-		     devTools.addListener(Network.requestWillBeSent(), requestEvent -> {
-		         String requestUrl = requestEvent.getRequest().getUrl();
-		         if (requestUrl.startsWith(expectedUrlBase)) {
-		             expectedRequestId.set(requestEvent.getRequestId().toString());
-		             Reporter.log("Captured expected request ID: " + expectedRequestId.get());
-		         }
-		     });
+            // Capture the first request ID
+            devTools.addListener(Network.requestWillBeSent(), requestEvent -> {
+                String requestUrl = requestEvent.getRequest().getUrl();
+                if (requestUrl.startsWith(expectedUrlBase)) {
+                    expectedRequestId.set(requestEvent.getRequestId().toString());
+                    Reporter.log("Captured expected request ID: " + expectedRequestId.get());
+                }
+            });
 
-		     // Listen for network responses
-		     devTools.addListener(Network.responseReceived(), responseReceived -> {
-		         // Process only if this response belongs to our expected request
-		         if (!responseReceived.getRequestId().toString().equals(expectedRequestId.get())) {
-		             return;
-		         }
-		         Response res = responseReceived.getResponse();
-		         String actualUrl = res.getUrl();
-		         Reporter.log("Processing response from expected URL: " + actualUrl);
-		         try {
-		             // Retrieve the response body using the request ID from the event
-		             var requestId = responseReceived.getRequestId();
-		             String body = devTools.send(Network.getResponseBody(requestId)).getBody();
-		             Reporter.log("Response Body: " + body);
-		             // Parse the JSON and extract the "status" field
-		             JSONObject jsonResponse = new JSONObject(body);
-		             int statusFromBody = jsonResponse.getInt("status");
-		             Reporter.log("Status from API response body: " + statusFromBody);
-		             responseStatus.set(statusFromBody);
-		         } catch (Exception e) {
-		        	 Reporter.log("Error retrieving/parsing response body: " + e.getMessage());
-		         }
-		     });
+            // Listen for network responses
+            devTools.addListener(Network.responseReceived(), responseReceived -> {
+                // Process only the first API response received
+                if (firstResponseProcessed.get()) {
+                    return; // Ignore any second response
+                }
 
-			// Click the "Next" button to trigger the API call
-			driver.findElement(By.xpath("(//span[contains(.,\" NEXT STEP \")])[2]")).click();
+                Response res = responseReceived.getResponse();
+                String actualUrl = res.getUrl();
+                Reporter.log("Processing response from expected URL: " + actualUrl);
 
-			// Wait until the API response for the expected URL is received (responseStatus != -1)
-			new WebDriverWait(driver, Duration.ofSeconds(30))
-			    .until(d -> responseStatus.get() != -1);
+                try {
+                    // Retrieve the response body
+                    var requestId = responseReceived.getRequestId();
+                    String body = devTools.send(Network.getResponseBody(requestId)).getBody();
+                    Reporter.log("Response Body: " + body);
 
+                    // Parse JSON and extract status field
+                    JSONObject jsonResponse = new JSONObject(body);
+                    int statusFromBody = jsonResponse.getInt("status");
+                    Reporter.log("Status from API response body: " + statusFromBody);
+
+                    responseStatus.set(statusFromBody);
+                    firstResponseProcessed.set(true); // Mark first response as processed
+                } catch (Exception e) {
+                    Reporter.log("Error retrieving/parsing response body: " + e.getMessage());
+                }
+            });
+
+            // Click the "Next" button to trigger API calls
+            driver.findElement(By.xpath("(//span[contains(.,\" NEXT STEP \")])[2]")).click();
+
+            // ✅ **Fixed WebDriverWait to wait until the first response is processed**
+            new WebDriverWait(driver, Duration.ofSeconds(30))
+                .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
 			// Check if the API response status is 200 before clicking the next button
 			if (responseStatus.get() == 500) {
 //			    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
@@ -207,51 +220,58 @@ import Staging3.TestListeners;
 			devTools.createSession();
 
 			// Use an AtomicInteger to store the response status code (-1 means not yet set)
-			AtomicInteger responseStatus = new AtomicInteger(-1);
-			 AtomicReference<String> expectedRequestId = new AtomicReference<>("");
+			// Atomic variables for thread-safe response tracking
+            AtomicInteger responseStatus = new AtomicInteger(-1);
+            AtomicReference<String> expectedRequestId = new AtomicReference<>("");
+            AtomicBoolean firstResponseProcessed = new AtomicBoolean(false); // Ensure only first response is used
 
-		     // Enable network tracking
-		     devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
+            // Enable network tracking
+            devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
 
-		     // Capture the request ID when the expected API call is sent
-		     devTools.addListener(Network.requestWillBeSent(), requestEvent -> {
-		         String requestUrl = requestEvent.getRequest().getUrl();
-		         if (requestUrl.startsWith(expectedUrlBase)) {
-		             expectedRequestId.set(requestEvent.getRequestId().toString());
-		             Reporter.log("Captured expected request ID: " + expectedRequestId.get());
-		         }
-		     });
+            // Capture the first request ID
+            devTools.addListener(Network.requestWillBeSent(), requestEvent -> {
+                String requestUrl = requestEvent.getRequest().getUrl();
+                if (requestUrl.startsWith(expectedUrlBase)) {
+                    expectedRequestId.set(requestEvent.getRequestId().toString());
+                    Reporter.log("Captured expected request ID: " + expectedRequestId.get());
+                }
+            });
 
-		     // Listen for network responses
-		     devTools.addListener(Network.responseReceived(), responseReceived -> {
-		         // Process only if this response belongs to our expected request
-		         if (!responseReceived.getRequestId().toString().equals(expectedRequestId.get())) {
-		             return;
-		         }
-		         Response res = responseReceived.getResponse();
-		         String actualUrl = res.getUrl();
-		         Reporter.log("Processing response from expected URL: " + actualUrl);
-		         try {
-		             // Retrieve the response body using the request ID from the event
-		             var requestId = responseReceived.getRequestId();
-		             String body = devTools.send(Network.getResponseBody(requestId)).getBody();
-		             Reporter.log("Response Body: " + body);
-		             // Parse the JSON and extract the "status" field
-		             JSONObject jsonResponse = new JSONObject(body);
-		             int statusFromBody = jsonResponse.getInt("status");
-		             Reporter.log("Status from API response body: " + statusFromBody);
-		             responseStatus.set(statusFromBody);
-		         } catch (Exception e) {
-		        	 Reporter.log("Error retrieving/parsing response body: " + e.getMessage());
-		         }
-		     });
+            // Listen for network responses
+            devTools.addListener(Network.responseReceived(), responseReceived -> {
+                // Process only the first API response received
+                if (firstResponseProcessed.get()) {
+                    return; // Ignore any second response
+                }
 
-			// Click the "Next" button to trigger the API call
-			driver.findElement(By.xpath("(//span[contains(.,\" NEXT STEP \")])[2]")).click();
+                Response res = responseReceived.getResponse();
+                String actualUrl = res.getUrl();
+                Reporter.log("Processing response from expected URL: " + actualUrl);
 
-			// Wait until the API response for the expected URL is received (responseStatus != -1)
-			new WebDriverWait(driver, Duration.ofSeconds(30))
-			    .until(d -> responseStatus.get() != -1);
+                try {
+                    // Retrieve the response body
+                    var requestId = responseReceived.getRequestId();
+                    String body = devTools.send(Network.getResponseBody(requestId)).getBody();
+                    Reporter.log("Response Body: " + body);
+
+                    // Parse JSON and extract status field
+                    JSONObject jsonResponse = new JSONObject(body);
+                    int statusFromBody = jsonResponse.getInt("status");
+                    Reporter.log("Status from API response body: " + statusFromBody);
+
+                    responseStatus.set(statusFromBody);
+                    firstResponseProcessed.set(true); // Mark first response as processed
+                } catch (Exception e) {
+                    Reporter.log("Error retrieving/parsing response body: " + e.getMessage());
+                }
+            });
+
+            // Click the "Next" button to trigger API calls
+            driver.findElement(By.xpath("(//span[contains(.,\" NEXT STEP \")])[2]")).click();
+
+            // ✅ **Fixed WebDriverWait to wait until the first response is processed**
+            new WebDriverWait(driver, Duration.ofSeconds(30))
+                .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
 
 			// Check if the API response status is 200 before clicking the next button
 			if (responseStatus.get() == 500) {
@@ -281,52 +301,58 @@ import Staging3.TestListeners;
 			devTools.createSession();
 
 			// Use an AtomicInteger to store the response status code (-1 means not yet set)
-			AtomicInteger responseStatus = new AtomicInteger(-1);
-			 AtomicReference<String> expectedRequestId = new AtomicReference<>("");
+			// Atomic variables for thread-safe response tracking
+            AtomicInteger responseStatus = new AtomicInteger(-1);
+            AtomicReference<String> expectedRequestId = new AtomicReference<>("");
+            AtomicBoolean firstResponseProcessed = new AtomicBoolean(false); // Ensure only first response is used
 
-		     // Enable network tracking
-		     devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
+            // Enable network tracking
+            devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
 
-		     // Capture the request ID when the expected API call is sent
-		     devTools.addListener(Network.requestWillBeSent(), requestEvent -> {
-		         String requestUrl = requestEvent.getRequest().getUrl();
-		         if (requestUrl.startsWith(expectedUrlBase)) {
-		             expectedRequestId.set(requestEvent.getRequestId().toString());
-		             Reporter.log("Captured expected request ID: " + expectedRequestId.get());
-		         }
-		     });
+            // Capture the first request ID
+            devTools.addListener(Network.requestWillBeSent(), requestEvent -> {
+                String requestUrl = requestEvent.getRequest().getUrl();
+                if (requestUrl.startsWith(expectedUrlBase)) {
+                    expectedRequestId.set(requestEvent.getRequestId().toString());
+                    Reporter.log("Captured expected request ID: " + expectedRequestId.get());
+                }
+            });
 
-		     // Listen for network responses
-		     devTools.addListener(Network.responseReceived(), responseReceived -> {
-		         // Process only if this response belongs to our expected request
-		         if (!responseReceived.getRequestId().toString().equals(expectedRequestId.get())) {
-		             return;
-		         }
-		         Response res = responseReceived.getResponse();
-		         String actualUrl = res.getUrl();
-		         Reporter.log("Processing response from expected URL: " + actualUrl);
-		         try {
-		             // Retrieve the response body using the request ID from the event
-		             var requestId = responseReceived.getRequestId();
-		             String body = devTools.send(Network.getResponseBody(requestId)).getBody();
-		             Reporter.log("Response Body: " + body);
-		             // Parse the JSON and extract the "status" field
-		             JSONObject jsonResponse = new JSONObject(body);
-		             int statusFromBody = jsonResponse.getInt("status");
-		             Reporter.log("Status from API response body: " + statusFromBody);
-		             responseStatus.set(statusFromBody);
-		         } catch (Exception e) {
-		        	 Reporter.log("Error retrieving/parsing response body: " + e.getMessage());
-		         }
-		     });
+            // Listen for network responses
+            devTools.addListener(Network.responseReceived(), responseReceived -> {
+                // Process only the first API response received
+                if (firstResponseProcessed.get()) {
+                    return; // Ignore any second response
+                }
 
-			// Click the "Next" button to trigger the API call
-			driver.findElement(By.xpath("(//span[contains(.,\" NEXT STEP \")])[2]")).click();
+                Response res = responseReceived.getResponse();
+                String actualUrl = res.getUrl();
+                Reporter.log("Processing response from expected URL: " + actualUrl);
 
-			// Wait until the API response for the expected URL is received (responseStatus != -1)
-			new WebDriverWait(driver, Duration.ofSeconds(30))
-			    .until(d -> responseStatus.get() != -1);
+                try {
+                    // Retrieve the response body
+                    var requestId = responseReceived.getRequestId();
+                    String body = devTools.send(Network.getResponseBody(requestId)).getBody();
+                    Reporter.log("Response Body: " + body);
 
+                    // Parse JSON and extract status field
+                    JSONObject jsonResponse = new JSONObject(body);
+                    int statusFromBody = jsonResponse.getInt("status");
+                    Reporter.log("Status from API response body: " + statusFromBody);
+
+                    responseStatus.set(statusFromBody);
+                    firstResponseProcessed.set(true); // Mark first response as processed
+                } catch (Exception e) {
+                    Reporter.log("Error retrieving/parsing response body: " + e.getMessage());
+                }
+            });
+
+            // Click the "Next" button to trigger API calls
+            driver.findElement(By.xpath("(//span[contains(.,\" NEXT STEP \")])[2]")).click();
+
+            // ✅ **Fixed WebDriverWait to wait until the first response is processed**
+            new WebDriverWait(driver, Duration.ofSeconds(30))
+                .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
 			// Check if the API response status is 200 before clicking the next button
 			if (responseStatus.get() == 500) {
 //			    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
@@ -357,52 +383,58 @@ import Staging3.TestListeners;
 			devTools.createSession();
 
 			// Use an AtomicInteger to store the response status code (-1 means not yet set)
-			AtomicInteger responseStatus = new AtomicInteger(-1);
-			 AtomicReference<String> expectedRequestId = new AtomicReference<>("");
+			// Atomic variables for thread-safe response tracking
+            AtomicInteger responseStatus = new AtomicInteger(-1);
+            AtomicReference<String> expectedRequestId = new AtomicReference<>("");
+            AtomicBoolean firstResponseProcessed = new AtomicBoolean(false); // Ensure only first response is used
 
-		     // Enable network tracking
-		     devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
+            // Enable network tracking
+            devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
 
-		     // Capture the request ID when the expected API call is sent
-		     devTools.addListener(Network.requestWillBeSent(), requestEvent -> {
-		         String requestUrl = requestEvent.getRequest().getUrl();
-		         if (requestUrl.startsWith(expectedUrlBase)) {
-		             expectedRequestId.set(requestEvent.getRequestId().toString());
-		             Reporter.log("Captured expected request ID: " + expectedRequestId.get());
-		         }
-		     });
+            // Capture the first request ID
+            devTools.addListener(Network.requestWillBeSent(), requestEvent -> {
+                String requestUrl = requestEvent.getRequest().getUrl();
+                if (requestUrl.startsWith(expectedUrlBase)) {
+                    expectedRequestId.set(requestEvent.getRequestId().toString());
+                    Reporter.log("Captured expected request ID: " + expectedRequestId.get());
+                }
+            });
 
-		     // Listen for network responses
-		     devTools.addListener(Network.responseReceived(), responseReceived -> {
-		         // Process only if this response belongs to our expected request
-		         if (!responseReceived.getRequestId().toString().equals(expectedRequestId.get())) {
-		             return;
-		         }
-		         Response res = responseReceived.getResponse();
-		         String actualUrl = res.getUrl();
-		         Reporter.log("Processing response from expected URL: " + actualUrl);
-		         try {
-		             // Retrieve the response body using the request ID from the event
-		             var requestId = responseReceived.getRequestId();
-		             String body = devTools.send(Network.getResponseBody(requestId)).getBody();
-		             Reporter.log("Response Body: " + body);
-		             // Parse the JSON and extract the "status" field
-		             JSONObject jsonResponse = new JSONObject(body);
-		             int statusFromBody = jsonResponse.getInt("status");
-		             Reporter.log("Status from API response body: " + statusFromBody);
-		             responseStatus.set(statusFromBody);
-		         } catch (Exception e) {
-		        	 Reporter.log("Error retrieving/parsing response body: " + e.getMessage());
-		         }
-		     });
+            // Listen for network responses
+            devTools.addListener(Network.responseReceived(), responseReceived -> {
+                // Process only the first API response received
+                if (firstResponseProcessed.get()) {
+                    return; // Ignore any second response
+                }
 
-			// Click the "Next" button to trigger the API call
-			driver.findElement(By.xpath("(//span[contains(.,\" NEXT STEP \")])[2]")).click();
+                Response res = responseReceived.getResponse();
+                String actualUrl = res.getUrl();
+                Reporter.log("Processing response from expected URL: " + actualUrl);
 
-			// Wait until the API response for the expected URL is received (responseStatus != -1)
-			new WebDriverWait(driver, Duration.ofSeconds(30))
-			    .until(d -> responseStatus.get() != -1);
+                try {
+                    // Retrieve the response body
+                    var requestId = responseReceived.getRequestId();
+                    String body = devTools.send(Network.getResponseBody(requestId)).getBody();
+                    Reporter.log("Response Body: " + body);
 
+                    // Parse JSON and extract status field
+                    JSONObject jsonResponse = new JSONObject(body);
+                    int statusFromBody = jsonResponse.getInt("status");
+                    Reporter.log("Status from API response body: " + statusFromBody);
+
+                    responseStatus.set(statusFromBody);
+                    firstResponseProcessed.set(true); // Mark first response as processed
+                } catch (Exception e) {
+                    Reporter.log("Error retrieving/parsing response body: " + e.getMessage());
+                }
+            });
+
+            // Click the "Next" button to trigger API calls
+            driver.findElement(By.xpath("(//span[contains(.,\" NEXT STEP \")])[2]")).click();
+
+            // ✅ **Fixed WebDriverWait to wait until the first response is processed**
+            new WebDriverWait(driver, Duration.ofSeconds(30))
+                .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
 			// Check if the API response status is 200 before clicking the next button
 			if (responseStatus.get() == 500) {
 //			    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
@@ -435,51 +467,58 @@ import Staging3.TestListeners;
 			devTools.createSession();
 
 			// Use an AtomicInteger to store the response status code (-1 means not yet set)
-			AtomicInteger responseStatus = new AtomicInteger(-1);
-			 AtomicReference<String> expectedRequestId = new AtomicReference<>("");
+			// Atomic variables for thread-safe response tracking
+            AtomicInteger responseStatus = new AtomicInteger(-1);
+            AtomicReference<String> expectedRequestId = new AtomicReference<>("");
+            AtomicBoolean firstResponseProcessed = new AtomicBoolean(false); // Ensure only first response is used
 
-		     // Enable network tracking
-		     devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
+            // Enable network tracking
+            devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
 
-		     // Capture the request ID when the expected API call is sent
-		     devTools.addListener(Network.requestWillBeSent(), requestEvent -> {
-		         String requestUrl = requestEvent.getRequest().getUrl();
-		         if (requestUrl.startsWith(expectedUrlBase)) {
-		             expectedRequestId.set(requestEvent.getRequestId().toString());
-		             Reporter.log("Captured expected request ID: " + expectedRequestId.get());
-		         }
-		     });
+            // Capture the first request ID
+            devTools.addListener(Network.requestWillBeSent(), requestEvent -> {
+                String requestUrl = requestEvent.getRequest().getUrl();
+                if (requestUrl.startsWith(expectedUrlBase)) {
+                    expectedRequestId.set(requestEvent.getRequestId().toString());
+                    Reporter.log("Captured expected request ID: " + expectedRequestId.get());
+                }
+            });
 
-		     // Listen for network responses
-		     devTools.addListener(Network.responseReceived(), responseReceived -> {
-		         // Process only if this response belongs to our expected request
-		         if (!responseReceived.getRequestId().toString().equals(expectedRequestId.get())) {
-		             return;
-		         }
-		         Response res = responseReceived.getResponse();
-		         String actualUrl = res.getUrl();
-		         Reporter.log("Processing response from expected URL: " + actualUrl);
-		         try {
-		             // Retrieve the response body using the request ID from the event
-		             var requestId = responseReceived.getRequestId();
-		             String body = devTools.send(Network.getResponseBody(requestId)).getBody();
-		             Reporter.log("Response Body: " + body);
-		             // Parse the JSON and extract the "status" field
-		             JSONObject jsonResponse = new JSONObject(body);
-		             int statusFromBody = jsonResponse.getInt("status");
-		             Reporter.log("Status from API response body: " + statusFromBody);
-		             responseStatus.set(statusFromBody);
-		         } catch (Exception e) {
-		        	 Reporter.log("Error retrieving/parsing response body: " + e.getMessage());
-		         }
-		     });
+            // Listen for network responses
+            devTools.addListener(Network.responseReceived(), responseReceived -> {
+                // Process only the first API response received
+                if (firstResponseProcessed.get()) {
+                    return; // Ignore any second response
+                }
 
-			// Click the "Next" button to trigger the API call
-			driver.findElement(By.xpath("(//span[contains(.,\" NEXT STEP \")])[2]")).click();
+                Response res = responseReceived.getResponse();
+                String actualUrl = res.getUrl();
+                Reporter.log("Processing response from expected URL: " + actualUrl);
 
-			// Wait until the API response for the expected URL is received (responseStatus != -1)
-			new WebDriverWait(driver, Duration.ofSeconds(30))
-			    .until(d -> responseStatus.get() != -1);
+                try {
+                    // Retrieve the response body
+                    var requestId = responseReceived.getRequestId();
+                    String body = devTools.send(Network.getResponseBody(requestId)).getBody();
+                    Reporter.log("Response Body: " + body);
+
+                    // Parse JSON and extract status field
+                    JSONObject jsonResponse = new JSONObject(body);
+                    int statusFromBody = jsonResponse.getInt("status");
+                    Reporter.log("Status from API response body: " + statusFromBody);
+
+                    responseStatus.set(statusFromBody);
+                    firstResponseProcessed.set(true); // Mark first response as processed
+                } catch (Exception e) {
+                    Reporter.log("Error retrieving/parsing response body: " + e.getMessage());
+                }
+            });
+
+            // Click the "Next" button to trigger API calls
+            driver.findElement(By.xpath("(//span[contains(.,\" NEXT STEP \")])[2]")).click();
+
+            // ✅ **Fixed WebDriverWait to wait until the first response is processed**
+            new WebDriverWait(driver, Duration.ofSeconds(30))
+                .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
 
 			// Check if the API response status is 200 before clicking the next button
 			if (responseStatus.get() == 500) {
@@ -509,51 +548,58 @@ import Staging3.TestListeners;
 			devTools.createSession();
 
 			// Use an AtomicInteger to store the response status code (-1 means not yet set)
-			AtomicInteger responseStatus = new AtomicInteger(-1);
-			 AtomicReference<String> expectedRequestId = new AtomicReference<>("");
+			// Atomic variables for thread-safe response tracking
+            AtomicInteger responseStatus = new AtomicInteger(-1);
+            AtomicReference<String> expectedRequestId = new AtomicReference<>("");
+            AtomicBoolean firstResponseProcessed = new AtomicBoolean(false); // Ensure only first response is used
 
-		     // Enable network tracking
-		     devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
+            // Enable network tracking
+            devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
 
-		     // Capture the request ID when the expected API call is sent
-		     devTools.addListener(Network.requestWillBeSent(), requestEvent -> {
-		         String requestUrl = requestEvent.getRequest().getUrl();
-		         if (requestUrl.startsWith(expectedUrlBase)) {
-		             expectedRequestId.set(requestEvent.getRequestId().toString());
-		             Reporter.log("Captured expected request ID: " + expectedRequestId.get());
-		         }
-		     });
+            // Capture the first request ID
+            devTools.addListener(Network.requestWillBeSent(), requestEvent -> {
+                String requestUrl = requestEvent.getRequest().getUrl();
+                if (requestUrl.startsWith(expectedUrlBase)) {
+                    expectedRequestId.set(requestEvent.getRequestId().toString());
+                    Reporter.log("Captured expected request ID: " + expectedRequestId.get());
+                }
+            });
 
-		     // Listen for network responses
-		     devTools.addListener(Network.responseReceived(), responseReceived -> {
-		         // Process only if this response belongs to our expected request
-		         if (!responseReceived.getRequestId().toString().equals(expectedRequestId.get())) {
-		             return;
-		         }
-		         Response res = responseReceived.getResponse();
-		         String actualUrl = res.getUrl();
-		         Reporter.log("Processing response from expected URL: " + actualUrl);
-		         try {
-		             // Retrieve the response body using the request ID from the event
-		             var requestId = responseReceived.getRequestId();
-		             String body = devTools.send(Network.getResponseBody(requestId)).getBody();
-		             Reporter.log("Response Body: " + body);
-		             // Parse the JSON and extract the "status" field
-		             JSONObject jsonResponse = new JSONObject(body);
-		             int statusFromBody = jsonResponse.getInt("status");
-		             Reporter.log("Status from API response body: " + statusFromBody);
-		             responseStatus.set(statusFromBody);
-		         } catch (Exception e) {
-		        	 Reporter.log("Error retrieving/parsing response body: " + e.getMessage());
-		         }
-		     });
+            // Listen for network responses
+            devTools.addListener(Network.responseReceived(), responseReceived -> {
+                // Process only the first API response received
+                if (firstResponseProcessed.get()) {
+                    return; // Ignore any second response
+                }
 
-			// Click the "Next" button to trigger the API call
-			driver.findElement(By.xpath("(//span[contains(.,\" NEXT STEP \")])[2]")).click();
+                Response res = responseReceived.getResponse();
+                String actualUrl = res.getUrl();
+                Reporter.log("Processing response from expected URL: " + actualUrl);
 
-			// Wait until the API response for the expected URL is received (responseStatus != -1)
-			new WebDriverWait(driver, Duration.ofSeconds(30))
-			    .until(d -> responseStatus.get() != -1);
+                try {
+                    // Retrieve the response body
+                    var requestId = responseReceived.getRequestId();
+                    String body = devTools.send(Network.getResponseBody(requestId)).getBody();
+                    Reporter.log("Response Body: " + body);
+
+                    // Parse JSON and extract status field
+                    JSONObject jsonResponse = new JSONObject(body);
+                    int statusFromBody = jsonResponse.getInt("status");
+                    Reporter.log("Status from API response body: " + statusFromBody);
+
+                    responseStatus.set(statusFromBody);
+                    firstResponseProcessed.set(true); // Mark first response as processed
+                } catch (Exception e) {
+                    Reporter.log("Error retrieving/parsing response body: " + e.getMessage());
+                }
+            });
+
+            // Click the "Next" button to trigger API calls
+            driver.findElement(By.xpath("(//span[contains(.,\" NEXT STEP \")])[2]")).click();
+
+            // ✅ **Fixed WebDriverWait to wait until the first response is processed**
+            new WebDriverWait(driver, Duration.ofSeconds(30))
+                .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
 
 			// Check if the API response status is 200 before clicking the next button
 			if (responseStatus.get() == 500) {
@@ -585,52 +631,58 @@ import Staging3.TestListeners;
 			devTools.createSession();
 
 			// Use an AtomicInteger to store the response status code (-1 means not yet set)
-			AtomicInteger responseStatus = new AtomicInteger(-1);
-			 AtomicReference<String> expectedRequestId = new AtomicReference<>("");
+			// Atomic variables for thread-safe response tracking
+            AtomicInteger responseStatus = new AtomicInteger(-1);
+            AtomicReference<String> expectedRequestId = new AtomicReference<>("");
+            AtomicBoolean firstResponseProcessed = new AtomicBoolean(false); // Ensure only first response is used
 
-		     // Enable network tracking
-		     devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
+            // Enable network tracking
+            devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
 
-		     // Capture the request ID when the expected API call is sent
-		     devTools.addListener(Network.requestWillBeSent(), requestEvent -> {
-		         String requestUrl = requestEvent.getRequest().getUrl();
-		         if (requestUrl.startsWith(expectedUrlBase)) {
-		             expectedRequestId.set(requestEvent.getRequestId().toString());
-		             Reporter.log("Captured expected request ID: " + expectedRequestId.get());
-		         }
-		     });
+            // Capture the first request ID
+            devTools.addListener(Network.requestWillBeSent(), requestEvent -> {
+                String requestUrl = requestEvent.getRequest().getUrl();
+                if (requestUrl.startsWith(expectedUrlBase)) {
+                    expectedRequestId.set(requestEvent.getRequestId().toString());
+                    Reporter.log("Captured expected request ID: " + expectedRequestId.get());
+                }
+            });
 
-		     // Listen for network responses
-		     devTools.addListener(Network.responseReceived(), responseReceived -> {
-		         // Process only if this response belongs to our expected request
-		         if (!responseReceived.getRequestId().toString().equals(expectedRequestId.get())) {
-		             return;
-		         }
-		         Response res = responseReceived.getResponse();
-		         String actualUrl = res.getUrl();
-		         Reporter.log("Processing response from expected URL: " + actualUrl);
-		         try {
-		             // Retrieve the response body using the request ID from the event
-		             var requestId = responseReceived.getRequestId();
-		             String body = devTools.send(Network.getResponseBody(requestId)).getBody();
-		             Reporter.log("Response Body: " + body);
-		             // Parse the JSON and extract the "status" field
-		             JSONObject jsonResponse = new JSONObject(body);
-		             int statusFromBody = jsonResponse.getInt("status");
-		             Reporter.log("Status from API response body: " + statusFromBody);
-		             responseStatus.set(statusFromBody);
-		         } catch (Exception e) {
-		        	 Reporter.log("Error retrieving/parsing response body: " + e.getMessage());
-		         }
-		     });
+            // Listen for network responses
+            devTools.addListener(Network.responseReceived(), responseReceived -> {
+                // Process only the first API response received
+                if (firstResponseProcessed.get()) {
+                    return; // Ignore any second response
+                }
 
-			// Click the "Next" button to trigger the API call
-			driver.findElement(By.xpath("(//span[contains(.,\" NEXT STEP \")])[2]")).click();
+                Response res = responseReceived.getResponse();
+                String actualUrl = res.getUrl();
+                Reporter.log("Processing response from expected URL: " + actualUrl);
 
-			// Wait until the API response for the expected URL is received (responseStatus != -1)
-			new WebDriverWait(driver, Duration.ofSeconds(30))
-			    .until(d -> responseStatus.get() != -1);
+                try {
+                    // Retrieve the response body
+                    var requestId = responseReceived.getRequestId();
+                    String body = devTools.send(Network.getResponseBody(requestId)).getBody();
+                    Reporter.log("Response Body: " + body);
 
+                    // Parse JSON and extract status field
+                    JSONObject jsonResponse = new JSONObject(body);
+                    int statusFromBody = jsonResponse.getInt("status");
+                    Reporter.log("Status from API response body: " + statusFromBody);
+
+                    responseStatus.set(statusFromBody);
+                    firstResponseProcessed.set(true); // Mark first response as processed
+                } catch (Exception e) {
+                    Reporter.log("Error retrieving/parsing response body: " + e.getMessage());
+                }
+            });
+
+            // Click the "Next" button to trigger API calls
+            driver.findElement(By.xpath("(//span[contains(.,\" NEXT STEP \")])[2]")).click();
+
+            // ✅ **Fixed WebDriverWait to wait until the first response is processed**
+            new WebDriverWait(driver, Duration.ofSeconds(30))
+                .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
 			// Check if the API response status is 200 before clicking the next button
 			if (responseStatus.get() == 500)	 {
 //			    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
