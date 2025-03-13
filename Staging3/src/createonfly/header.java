@@ -102,7 +102,7 @@ public void headerisselectedasnone() throws InterruptedException, AWTException {
         .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
 
 	// Check if the API response status is 200 before clicking the next button
-	if (responseStatus.get() == 500) {
+    if (responseStatus.get() == 500 || responseStatus.get() == 400) {
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		Reporter.log("Test failed");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();
@@ -181,7 +181,7 @@ public void textWithoutenteringanytext() throws InterruptedException, AWTExcepti
     new WebDriverWait(driver, Duration.ofSeconds(30))
         .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
 	// Check if the API response status is 200 before clicking the next button
-	if (responseStatus.get() == 500) {
+    if (responseStatus.get() == 500 || responseStatus.get() == 400) {
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		Reporter.log("Test passed: API returned 500 when fallback value was not provided.");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();
@@ -272,7 +272,7 @@ public void testWithFallbackValue() throws InterruptedException {
      new WebDriverWait(driver, Duration.ofSeconds(30))
          .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
 	// Check if the API response status is 200 before clicking the next button
-	if (responseStatus.get() == 500) {
+     if (responseStatus.get() == 500 || responseStatus.get() == 400) {
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		 Reporter.log("Test Failed: API returned 500 when fallback value was provided.");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();
@@ -355,7 +355,7 @@ public void HeaderTextandAddVariable() throws InterruptedException {
      // ✅ **Fixed WebDriverWait to wait until the first response is processed**
      new WebDriverWait(driver, Duration.ofSeconds(30))
          .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
-	if (responseStatus.get() == 500) {
+     if (responseStatus.get() == 500 || responseStatus.get() == 400) {
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		 Reporter.log("Test Passed");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();
@@ -444,7 +444,7 @@ public void HeaderTextandAddVariablewithselectdapoint() throws InterruptedExcept
          .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
 
 	// Check if the API response status is 200 before clicking the next button
-	if (responseStatus.get() == 500) {
+     if (responseStatus.get() == 500 || responseStatus.get() == 400) {
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		 Reporter.log("Test Passed");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();
@@ -534,7 +534,7 @@ public void HeaderTextandAddVariablewithselectdapointandfallbackvalue() throws I
      // ✅ **Fixed WebDriverWait to wait until the first response is processed**
      new WebDriverWait(driver, Duration.ofSeconds(30))
          .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
-	if (responseStatus.get() == 500) {
+     if (responseStatus.get() == 500 || responseStatus.get() == 400){
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		 Reporter.log("Test Failed");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();
@@ -614,7 +614,7 @@ public void image() throws InterruptedException {
     new WebDriverWait(driver, Duration.ofSeconds(30))
         .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
 	// Check if the API response status is 200 before clicking the next button
-	if (responseStatus.get() == 500) {
+    if (responseStatus.get() == 500 || responseStatus.get() == 400) {
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		 Reporter.log("Test passed");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();
@@ -712,7 +712,7 @@ public void image1() throws InterruptedException, AWTException {
     // ✅ **Fixed WebDriverWait to wait until the first response is processed**
     new WebDriverWait(driver, Duration.ofSeconds(30))
         .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
-	if (responseStatus.get() == 500) {
+    if (responseStatus.get() == 500 || responseStatus.get() == 400) {
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		 Reporter.log("Test failed");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();
@@ -793,7 +793,7 @@ public void video() throws InterruptedException {
         .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
 
 	// Check if the API response status is 200 before clicking the next button
-	if (responseStatus.get() == 500) {
+    if (responseStatus.get() == 500 || responseStatus.get() == 400) {
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		 Reporter.log("Test passed");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();
@@ -891,7 +891,7 @@ public void video1() throws InterruptedException, AWTException {
     // ✅ **Fixed WebDriverWait to wait until the first response is processed**
     new WebDriverWait(driver, Duration.ofSeconds(30))
         .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
-	if (responseStatus.get() == 500) {
+    if (responseStatus.get() == 500 || responseStatus.get() == 400){
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		 Reporter.log("Test failed");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();
@@ -970,7 +970,7 @@ public void document() throws InterruptedException {
     // ✅ **Fixed WebDriverWait to wait until the first response is processed**
     new WebDriverWait(driver, Duration.ofSeconds(30))
         .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
-	if (responseStatus.get() == 500) {
+    if (responseStatus.get() == 500 || responseStatus.get() == 400) {
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		 Reporter.log("Test passed");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();
@@ -1070,7 +1070,7 @@ public void document1() throws InterruptedException, AWTException {
     // ✅ **Fixed WebDriverWait to wait until the first response is processed**
     new WebDriverWait(driver, Duration.ofSeconds(30))
         .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
-	if (responseStatus.get() == 500) {
+    if (responseStatus.get() == 500 || responseStatus.get() == 400) {
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		 Reporter.log("Test failed");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();

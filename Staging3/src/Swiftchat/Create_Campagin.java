@@ -86,5 +86,7 @@ public void campagin() throws InterruptedException {
 		driver.findElement(By.xpath("(//a[@role=\"menuitem\"])")).click();//click on view campaign button
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//a[contains(.,\"Back\")]")).click();//click on back button
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("(//span[contains(.,\"Chats\")])[2]")).click();//click on back button
 	}
 }

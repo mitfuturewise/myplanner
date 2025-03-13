@@ -25,7 +25,7 @@ public class body extends Login {
     public final String expectedUrlBase = "https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?";
 	
     @Test(priority = 1)
-	public void addvariable() throws InterruptedException, AWTException {
+	public void waddvariable() throws InterruptedException, AWTException {
 		TestListeners.setDriver(driver);
 		wfnp.whatsapp();
 		createcamp.newCampaign();
@@ -100,7 +100,7 @@ public class body extends Login {
 		}
 	}
     @Test(priority = 2)
-    public void selectdatapoint() throws InterruptedException, AWTException {
+    public void wselectdatapoint() throws InterruptedException, AWTException {
 		TestListeners.setDriver(driver);
 		wfnp.whatsapp();
 		createcamp.newCampaign();
@@ -182,7 +182,7 @@ public class body extends Login {
 		}
 	}
     @Test(priority = 3)
-    public void selectdatapointandfallbackvalue() throws InterruptedException, AWTException {
+    public void wselectdatapointandfallbackvalue() throws InterruptedException, AWTException {
 		TestListeners.setDriver(driver);
 		wfnp.whatsapp();
 		createcamp.newCampaign();

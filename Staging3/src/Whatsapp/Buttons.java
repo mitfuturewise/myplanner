@@ -37,7 +37,7 @@ import Staging3.TestListeners;
 	    public final String expectedUrlBase1 = "https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?";
 		
 	    @Test(priority = 1)
-		public void addwebsiteurl() throws InterruptedException, AWTException {
+		public void waddwebsiteurl() throws InterruptedException, AWTException {
 			TestListeners.setDriver(driver);
 			wfnp.whatsapp();
 			createcamp.newCampaign();
@@ -116,7 +116,7 @@ import Staging3.TestListeners;
 		
 		}
 	    @Test(priority = 2)
-		public void addwebsiteurlbuttontext() throws InterruptedException, AWTException {
+		public void waddwebsiteurlbuttontext() throws InterruptedException, AWTException {
 			TestListeners.setDriver(driver);
 			wfnp.whatsapp();
 			createcamp.newCampaign();
@@ -196,7 +196,7 @@ import Staging3.TestListeners;
 		
 		}
 	    @Test(priority = 3)
-		public void addwebsiteurlbuttontextcontent() throws InterruptedException, AWTException {
+		public void waddwebsiteurlbuttontextcontent() throws InterruptedException, AWTException {
 			TestListeners.setDriver(driver);
 			wfnp.whatsapp();
 			createcamp.newCampaign();
@@ -280,7 +280,7 @@ import Staging3.TestListeners;
 		
 		}
 	    @Test(priority = 4)
-		public void phonenumber() throws InterruptedException, AWTException {
+		public void wphonenumber() throws InterruptedException, AWTException {
 			TestListeners.setDriver(driver);
 			wfnp.whatsapp();
 			createcamp.newCampaign();
@@ -359,7 +359,7 @@ import Staging3.TestListeners;
 		
 		}
 	    @Test(priority = 5)
-		public void phonenumberbuttontext() throws InterruptedException, AWTException {
+		public void wphonenumberbuttontext() throws InterruptedException, AWTException {
 			TestListeners.setDriver(driver);
 			wfnp.whatsapp();
 			createcamp.newCampaign();
@@ -440,7 +440,7 @@ import Staging3.TestListeners;
 		
 		}
 	    @Test(priority = 6)
-		public void phonenumberbuttontextcontent() throws InterruptedException, AWTException {
+		public void wphonenumberbuttontextcontent() throws InterruptedException, AWTException {
 			TestListeners.setDriver(driver);
 			wfnp.whatsapp();
 			createcamp.newCampaign();
@@ -523,7 +523,7 @@ import Staging3.TestListeners;
 		
 		}
 	    @Test(priority = 7)
-		public void quickurl() throws InterruptedException, AWTException {
+		public void wquickurl() throws InterruptedException, AWTException {
 			TestListeners.setDriver(driver);
 			wfnp.whatsapp();
 			createcamp.newCampaign();
@@ -601,7 +601,7 @@ import Staging3.TestListeners;
 		
 		}
 	    @Test(priority = 8)
-		public void quickurlbuttontextcontent() throws InterruptedException, AWTException {
+		public void wquickurlbuttontextcontent() throws InterruptedException, AWTException {
 			TestListeners.setDriver(driver);
 			wfnp.whatsapp();
 			createcamp.newCampaign();
@@ -681,7 +681,7 @@ import Staging3.TestListeners;
 		
 		}
 	    @Test(priority = 9)
-	    public void testbuttonsclickwu() throws InterruptedException {
+	    public void wtestbuttonsclickwu() throws InterruptedException {
 	    	TestListeners.setDriver(driver);
 			wfnp.whatsapp();
 			createcamp.newCampaign();
@@ -699,7 +699,7 @@ import Staging3.TestListeners;
 			driver.findElement(By.xpath("(//span[@class=\"mat-option-text\"])[1]")).click();//select websiteurlbutton			
 	    }
 	    @Test(priority = 10)
-	    public void testbuttonsclickpn() throws InterruptedException {
+	    public void wtestbuttonsclickpn() throws InterruptedException {
 	    	TestListeners.setDriver(driver);
 			wfnp.whatsapp();
 			createcamp.newCampaign();
@@ -713,7 +713,7 @@ import Staging3.TestListeners;
 			driver.findElement(By.xpath("(//span[@class=\"mat-option-text\"])[2]")).click();//select websiteurlbutton
 	    }
 	    @Test(priority =11)
-	    public void testbuttonsclickqr() throws InterruptedException {
+	    public void wtestbuttonsclickqr() throws InterruptedException {
 	    	TestListeners.setDriver(driver);
 			wfnp.whatsapp();
 			createcamp.newCampaign();

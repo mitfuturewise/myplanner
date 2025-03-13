@@ -2,21 +2,22 @@
 <suite name="MyTestSuite">
 
     <!-- First, run createonfly tests in this order -->
+    <test name="Whatsapp">
+        <classes>
+			<class name="Whatsapp.header"/>
+			<class name="Whatsapp.body"/>
+			<class name="Whatsapp.Buttons"/>
+    
+        </classes>
+    </test>
     <test name="createonfly">
         <classes>
-            <class name="createonfly.header"/>
+			<class name="createonfly.header"/>
             <class name="createonfly.body"/>
             <class name="createonfly.Buttons"/>
         </classes>
     </test>
 
     <!-- Next, run whatsapp tests in this order -->
-    <test name="Whatsapp">
-        <classes>
-            <class name="Whatsapp.header"/>
-            <class name="Whatsapp.body"/>
-            <class name="Whatsapp.Buttons"/>
-        </classes>
-    </test>
-
+    
 </suite>

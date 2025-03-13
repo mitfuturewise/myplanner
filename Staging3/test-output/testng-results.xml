@@ -1,51 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="10" total="11" passed="1" failed="0" skipped="0">
+<testng-results ignored="3" total="4" passed="0" failed="1" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Captured expected request ID: 3588.508]]>
-    </line>
-    <line>
-      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjoyLCJ0ZW1wbGF0ZSI6eyJ0ZW1wbGF0ZU5hbWUiOiJkc181MV9kc2IydmpmY2hnMmdmZCIsImNhdGVnb3J5IjoiVVRJTElUWSIsImxhbmd1YWdlIjoiZW4iLCJ0ZW1wbGF0ZUhlYWRlck9iamVjdCI6eyJkb2NVcmwiOm51bGwsImhlYWRlclR5cGUiOm51bGwsImhlYWRlckNvbnRlbnQiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiRGVhciB7ezF9fSxcblxuT24gW1NJUCBEcml2ZSBEYXRlXSwgSeKAmW0gaG9zdGluZyBhIG9uY2UtaW4tYS15ZWFyIGludmVzdG1lbnQgZHJpdmUgY2FsbGVkIFNJUCBLYSBNYWhhIEt1bWJoIVxuXG7wn4yfIDUwMCsgU0lQcyBpbiBPbmUgRGF5ISBCZSBhIHBhcnQgb2YgdGhpcyBoaXN0b3JpYyB3ZWFsdGggbW92ZW1lbnQuXG7wn5SlIEpvaW4gdGhvdXNhbmRzIG9mIGludmVzdG9ycyB0YWtpbmcgYSBib2xkIHN0ZXAgdG93YXJkcyBmaW5hbmNpYWwgZnJlZWRvbSFcbvCfk4wgTGltaXRlZCB3aW5kb3cg4oCTIDI0IGhvdXJzIG9ubHkhIEJlIG9uZSBvZiBteSA1MDAgU0lQIGludmVzdG9ycyFcbvCfkYkgQ2xpY2sgYmVsb3cgdG8gcmVxdWVzdCBhIGNhbGxiYWNrICYgbG9jayBpbiB5b3VyIHNwb3QhXG5cblRoYW5rIHlvdSBmb3IgY2hvb3NpbmcgdXMuXG5TaW5jZXJlbHksXG57ezJ9fSIsImJvZHlQbGFjZWhvbGRlcnMiOlt7InNlcXVlbmNlTnVtYmVyIjoxLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJVc2VyIn0seyJzZXF1ZW5jZU51bWJlciI6Miwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjo4MCwicGxhY2Vob2xkZXJOYW1lIjoiQ29tcGFueSBOYW1lIiwiZmFsbEJhY2tWYWx1ZSI6Ik9yZ2FuaXphdGlvbiJ9XX0sInRlbXBsYXRlRm9vdGVyT2JqZWN0Ijp7ImZvb3RlclRleHQiOm51bGx9LCJ0ZW1wbGF0ZUJ1dHRvbnNPYmplY3QiOnsiYnV0dG9ucyI6W3sidHlwZSI6IlVSTCIsInRleHQiOiJVUkwiLCJ1cmwiOiJodHRwczovL215LXBsYW5uZXIuaW4vbG9naW4ifV19fX0%3D]]>
-    </line>
-    <line>
-      <![CDATA[Response Body: {"timestamp":1741584472970,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
-    </line>
-    <line>
-      <![CDATA[Status from API response body: 500]]>
-    </line>
-    <line>
-      <![CDATA[Test Failed: API returned 500 when fallback value was provided.]]>
-    </line>
   </reporter-output>
-  <suite started-at="2025-03-10T10:57:25 IST" name="Default suite" finished-at="2025-03-10T10:57:54 IST" duration-ms="28318">
+  <suite started-at="2025-03-13T17:53:19 IST" name="Default suite" finished-at="2025-03-13T17:53:48 IST" duration-ms="28927">
     <groups>
     </groups>
-    <test started-at="2025-03-10T10:57:25 IST" name="Default test" finished-at="2025-03-10T10:57:54 IST" duration-ms="28318">
-      <class name="Whatsapp.Buttons">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Whatsapp.Buttons@619713e5]" started-at="2025-03-10T10:57:25 IST" name="setUp" finished-at="2025-03-10T10:57:31 IST" duration-ms="5924" status="PASS">
+    <test started-at="2025-03-13T17:53:19 IST" name="Default test" finished-at="2025-03-13T17:53:48 IST" duration-ms="28927">
+      <class name="Whatsapp.newcampaign">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Whatsapp.newcampaign@72f926e6]" started-at="2025-03-13T17:53:19 IST" name="setUp" finished-at="2025-03-13T17:53:24 IST" duration-ms="4970" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[Captured expected request ID: 3588.508]]>
-            </line>
-            <line>
-              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjoyLCJ0ZW1wbGF0ZSI6eyJ0ZW1wbGF0ZU5hbWUiOiJkc181MV9kc2IydmpmY2hnMmdmZCIsImNhdGVnb3J5IjoiVVRJTElUWSIsImxhbmd1YWdlIjoiZW4iLCJ0ZW1wbGF0ZUhlYWRlck9iamVjdCI6eyJkb2NVcmwiOm51bGwsImhlYWRlclR5cGUiOm51bGwsImhlYWRlckNvbnRlbnQiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiRGVhciB7ezF9fSxcblxuT24gW1NJUCBEcml2ZSBEYXRlXSwgSeKAmW0gaG9zdGluZyBhIG9uY2UtaW4tYS15ZWFyIGludmVzdG1lbnQgZHJpdmUgY2FsbGVkIFNJUCBLYSBNYWhhIEt1bWJoIVxuXG7wn4yfIDUwMCsgU0lQcyBpbiBPbmUgRGF5ISBCZSBhIHBhcnQgb2YgdGhpcyBoaXN0b3JpYyB3ZWFsdGggbW92ZW1lbnQuXG7wn5SlIEpvaW4gdGhvdXNhbmRzIG9mIGludmVzdG9ycyB0YWtpbmcgYSBib2xkIHN0ZXAgdG93YXJkcyBmaW5hbmNpYWwgZnJlZWRvbSFcbvCfk4wgTGltaXRlZCB3aW5kb3cg4oCTIDI0IGhvdXJzIG9ubHkhIEJlIG9uZSBvZiBteSA1MDAgU0lQIGludmVzdG9ycyFcbvCfkYkgQ2xpY2sgYmVsb3cgdG8gcmVxdWVzdCBhIGNhbGxiYWNrICYgbG9jayBpbiB5b3VyIHNwb3QhXG5cblRoYW5rIHlvdSBmb3IgY2hvb3NpbmcgdXMuXG5TaW5jZXJlbHksXG57ezJ9fSIsImJvZHlQbGFjZWhvbGRlcnMiOlt7InNlcXVlbmNlTnVtYmVyIjoxLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJVc2VyIn0seyJzZXF1ZW5jZU51bWJlciI6Miwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjo4MCwicGxhY2Vob2xkZXJOYW1lIjoiQ29tcGFueSBOYW1lIiwiZmFsbEJhY2tWYWx1ZSI6Ik9yZ2FuaXphdGlvbiJ9XX0sInRlbXBsYXRlRm9vdGVyT2JqZWN0Ijp7ImZvb3RlclRleHQiOm51bGx9LCJ0ZW1wbGF0ZUJ1dHRvbnNPYmplY3QiOnsiYnV0dG9ucyI6W3sidHlwZSI6IlVSTCIsInRleHQiOiJVUkwiLCJ1cmwiOiJodHRwczovL215LXBsYW5uZXIuaW4vbG9naW4ifV19fX0%3D]]>
-            </line>
-            <line>
-              <![CDATA[Response Body: {"timestamp":1741584472970,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
-            </line>
-            <line>
-              <![CDATA[Status from API response body: 500]]>
-            </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addwebsiteurlbuttontextcontent()[pri:3, instance:Whatsapp.Buttons@619713e5]" started-at="2025-03-10T10:57:31 IST" name="addwebsiteurlbuttontextcontent" finished-at="2025-03-10T10:57:54 IST" duration-ms="22342" status="PASS">
+        <test-method signature="CreateTag()[pri:0, instance:Whatsapp.newcampaign@72f926e6]" started-at="2025-03-13T17:53:24 IST" name="CreateTag" finished-at="2025-03-13T17:53:48 IST" duration-ms="23737" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=133.0.6943.143)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fde6e5680b9659df3bd59b86108888e3, clickElement {id=f.76E7BD5182682B9F935904073546228A.d.A3F08E74F0134838395E01FC228CD41E.e.243}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.143, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61560}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61560/devtoo..., se:cdpVersion: 133.0.6943.143, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (fde6e5680b9659df3bd59b86108888e3)] -> xpath: //div[normalize-space(text())='Sandeep Kamble']/following::*[1]]
+Session ID: fde6e5680b9659df3bd59b86108888e3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=133.0.6943.143)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fde6e5680b9659df3bd59b86108888e3, clickElement {id=f.76E7BD5182682B9F935904073546228A.d.A3F08E74F0134838395E01FC228CD41E.e.243}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.143, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61560}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61560/devtoo..., se:cdpVersion: 133.0.6943.143, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (fde6e5680b9659df3bd59b86108888e3)] -> xpath: //div[normalize-space(text())='Sandeep Kamble']/following::*[1]]
+Session ID: fde6e5680b9659df3bd59b86108888e3
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at Whatsapp.newcampaign.CreateTag(newcampaign.java:218)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
-            <line>
-              <![CDATA[Test Failed: API returned 500 when fallback value was provided.]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- addwebsiteurlbuttontextcontent -->
-      </class> <!-- Whatsapp.Buttons -->
+        </test-method> <!-- CreateTag -->
+      </class> <!-- Whatsapp.newcampaign -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

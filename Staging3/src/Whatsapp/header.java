@@ -32,7 +32,7 @@ newcampaign createcamp = new newcampaign();
 wfnp wfnp = new wfnp();
 private final String expectedUrlBase = "https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?";
 @Test(priority = 1)
-public void headerisselectedasnone() throws InterruptedException, AWTException {
+public void wheaderisselectedasnone() throws InterruptedException, AWTException {
 	TestListeners.setDriver(driver);
 	wfnp.whatsapp();
 	createcamp.newCampaign();
@@ -99,7 +99,7 @@ public void headerisselectedasnone() throws InterruptedException, AWTException {
 
 
 	// Check if the API response status is 200 before clicking the next button
-	if (responseStatus.get() == 500) {
+	if (responseStatus.get() == 500 || responseStatus.get() == 400) {
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		Reporter.log("Test failed");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();
@@ -110,7 +110,7 @@ public void headerisselectedasnone() throws InterruptedException, AWTException {
 	}
 }
 @Test(priority = 2)
-public void textWithoutenteringanytext() throws InterruptedException, AWTException {
+public void wtextWithoutenteringanytext() throws InterruptedException, AWTException {
 	TestListeners.setDriver(driver);
 	wfnp.whatsapp();
 	createcamp.newCampaign();
@@ -177,7 +177,7 @@ public void textWithoutenteringanytext() throws InterruptedException, AWTExcepti
 
 
 	// Check if the API response status is 200 before clicking the next button
-	if (responseStatus.get() == 500) {
+    if (responseStatus.get() == 500 || responseStatus.get() == 400) {
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		Reporter.log("Test passed: API returned 500 when fallback value was not provided.");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();
@@ -198,7 +198,7 @@ public void textWithoutenteringanytext() throws InterruptedException, AWTExcepti
 	
 }
 @Test(priority = 3)
-public void testWithFallbackValue() throws InterruptedException {
+public void wtestWithFallbackValue() throws InterruptedException {
 	TestListeners.setDriver(driver);
 	wfnp.whatsapp();
 	Thread.sleep(1000);
@@ -268,7 +268,7 @@ public void testWithFallbackValue() throws InterruptedException {
 
 
 	// Check if the API response status is 200 before clicking the next button
-	if (responseStatus.get() == 500) {
+    if (responseStatus.get() == 500 || responseStatus.get() == 400) {
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		 Reporter.log("Test Failed: API returned 500 when fallback value was provided.");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();
@@ -280,7 +280,7 @@ public void testWithFallbackValue() throws InterruptedException {
 }
 
 @Test(priority = 4)
-public void HeaderTextandAddVariable() throws InterruptedException {
+public void wHeaderTextandAddVariable() throws InterruptedException {
 	TestListeners.setDriver(driver);
 	wfnp.whatsapp();
 	Thread.sleep(1000);
@@ -351,7 +351,7 @@ public void HeaderTextandAddVariable() throws InterruptedException {
         .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
 
 	// Check if the API response status is 200 before clicking the next button
-	if (responseStatus.get() == 500) {
+    if (responseStatus.get() == 500 || responseStatus.get() == 400) {
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		 Reporter.log("Test Passed");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();
@@ -362,7 +362,7 @@ public void HeaderTextandAddVariable() throws InterruptedException {
 	}	
 }
 @Test(priority = 5)
-public void HeaderTextandAddVariablewithselectdapoint() throws InterruptedException {
+public void wHeaderTextandAddVariablewithselectdapoint() throws InterruptedException {
 	TestListeners.setDriver(driver);
 	wfnp.whatsapp();
 	Thread.sleep(1000);
@@ -438,7 +438,7 @@ public void HeaderTextandAddVariablewithselectdapoint() throws InterruptedExcept
         .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
 
 	// Check if the API response status is 200 before clicking the next button
-	if (responseStatus.get() == 500) {
+    if (responseStatus.get() == 500 || responseStatus.get() == 400) {
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		 Reporter.log("Test Passed");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();
@@ -449,7 +449,7 @@ public void HeaderTextandAddVariablewithselectdapoint() throws InterruptedExcept
 	}	
 }
 @Test(priority = 6)
-public void HeaderTextandAddVariablewithselectdapointandfallbackvalue() throws InterruptedException {
+public void wHeaderTextandAddVariablewithselectdapointandfallbackvalue() throws InterruptedException {
 	TestListeners.setDriver(driver);
 	wfnp.whatsapp();
 	Thread.sleep(1000);
@@ -529,7 +529,7 @@ public void HeaderTextandAddVariablewithselectdapointandfallbackvalue() throws I
 
 
 	// Check if the API response status is 200 before clicking the next button
-	if (responseStatus.get() == 500) {
+    if (responseStatus.get() == 500 || responseStatus.get() == 400) {
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		 Reporter.log("Test Failed");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();
@@ -540,7 +540,7 @@ public void HeaderTextandAddVariablewithselectdapointandfallbackvalue() throws I
 	}	
 }
 @Test(priority = 7)
-public void image() throws InterruptedException {
+public void wimage() throws InterruptedException {
 	TestListeners.setDriver(driver);
 	wfnp.whatsapp();
 	Thread.sleep(1000);
@@ -608,7 +608,7 @@ public void image() throws InterruptedException {
         .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
 
 	// Check if the API response status is 200 before clicking the next button
-	if (responseStatus.get() == 500) {
+    if (responseStatus.get() == 500 || responseStatus.get() == 400) {
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		 Reporter.log("Test passed");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();
@@ -619,7 +619,7 @@ public void image() throws InterruptedException {
 	}	
 }
 @Test(priority = 8)
-public void image1() throws InterruptedException, AWTException {
+public void wimage1() throws InterruptedException, AWTException {
 	TestListeners.setDriver(driver);
 	wfnp.whatsapp();
 	Thread.sleep(1000);
@@ -706,7 +706,7 @@ public void image1() throws InterruptedException, AWTException {
         .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
 
 	// Check if the API response status is 200 before clicking the next button
-	if (responseStatus.get() == 500) {
+    if (responseStatus.get() == 500 || responseStatus.get() == 400) {
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		 Reporter.log("Test failed");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();
@@ -717,7 +717,7 @@ public void image1() throws InterruptedException, AWTException {
 	}	
 }
 @Test(priority = 9)
-public void video() throws InterruptedException {
+public void wvideo() throws InterruptedException {
 	TestListeners.setDriver(driver);
 	wfnp.whatsapp();
 	Thread.sleep(1000);
@@ -784,7 +784,7 @@ public void video() throws InterruptedException {
     new WebDriverWait(driver, Duration.ofSeconds(30))
         .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
 
-	if (responseStatus.get() == 500) {
+    if (responseStatus.get() == 500 || responseStatus.get() == 400) {
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		 Reporter.log("Test passed");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();
@@ -795,7 +795,7 @@ public void video() throws InterruptedException {
 	}	
 }
 @Test(priority = 10)
-public void video1() throws InterruptedException, AWTException {
+public void wideo1() throws InterruptedException, AWTException {
 	TestListeners.setDriver(driver);
 	wfnp.whatsapp();
 	Thread.sleep(1000);
@@ -882,7 +882,7 @@ public void video1() throws InterruptedException, AWTException {
 
 
 	// Check if the API response status is 200 before clicking the next button
-	if (responseStatus.get() == 500) {
+    if (responseStatus.get() == 500 || responseStatus.get() == 400) {
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		 Reporter.log("Test failed");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();
@@ -893,7 +893,7 @@ public void video1() throws InterruptedException, AWTException {
 	}	
 }
 @Test(priority = 11)
-public void document() throws InterruptedException {
+public void wdocument() throws InterruptedException {
 	TestListeners.setDriver(driver);
 	wfnp.whatsapp();
 	Thread.sleep(1000);
@@ -960,7 +960,7 @@ public void document() throws InterruptedException {
         .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
 
 	// Check if the API response status is 200 before clicking the next button
-	if (responseStatus.get() == 500) {
+    if (responseStatus.get() == 500 || responseStatus.get() == 400) {
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		 Reporter.log("Test passed");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();
@@ -971,7 +971,7 @@ public void document() throws InterruptedException {
 	}	
 }
 @Test(priority = 12)
-public void document1() throws InterruptedException, AWTException {
+public void wdocument1() throws InterruptedException, AWTException {
 	TestListeners.setDriver(driver);
 	wfnp.whatsapp();
 	Thread.sleep(1000);
@@ -1060,7 +1060,7 @@ public void document1() throws InterruptedException, AWTException {
         .until(driver -> Boolean.TRUE.equals(firstResponseProcessed.get()));
 
 	// Check if the API response status is 200 before clicking the next button
-	if (responseStatus.get() == 500) {
+    if (responseStatus.get() == 500 || responseStatus.get() == 400) {
 //	    driver.findElement(By.xpath("//span[@class=\"textZindex\"]")).click();
 		 Reporter.log("Test failed");
 		 driver.findElement(By.xpath("//i[contains(.,\" clear \")]")).click();

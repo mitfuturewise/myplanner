@@ -59,25 +59,19 @@ public class Create_Template extends Dashboard {
 		 Thread.sleep(1000);
 		 driver.findElement(By.xpath("//span[contains(.,\"Visit website (2)\")]")).click();
 		 Thread.sleep(1000);
-		 driver.findElement(By.xpath("//span[contains(.,\"Copy offer code (1)\")]")).click();
-		 Thread.sleep(1000);
 		 driver.findElement(By.xpath("//span[contains(.,\"Custom button (6)\")]")).click();
 		 Thread.sleep(1000);
-		 driver.findElement(By.xpath("(//input[@type=\"text\"])[6]")).sendKeys("Call");
+		 driver.findElement(By.xpath("(//input[@type=\"text\"])[4]")).sendKeys("Call");
 		 Thread.sleep(1000);
-		 driver.findElement(By.xpath("(//input[@type=\"text\"])[7]")).sendKeys("India");
+		 driver.findElement(By.xpath("(//input[@type=\"text\"])[5]")).sendKeys("India");
 		 Thread.sleep(1000);
-		 driver.findElement(By.xpath("(//input[@type=\"text\"])[8]")).sendKeys("+919834549528");
+		 driver.findElement(By.xpath("(//input[@type=\"text\"])[6]")).sendKeys("+919834549528");
 		 Thread.sleep(1000);
-		 driver.findElement(By.xpath("(//input[@type=\"text\"])[9]")).sendKeys("Redirect");
+		 driver.findElement(By.xpath("(//input[@type=\"text\"])[7]")).sendKeys("Redirect");
 		 Thread.sleep(1000);
 		 driver.findElement(By.xpath("//input[@type=\"url\"]")).sendKeys("https://my-planner.in/login");
 		 Thread.sleep(1000);
-		 driver.findElement(By.xpath("(//input[@type=\"text\"])[10]")).sendKeys("Coupon");
-		 Thread.sleep(1000);
-		 driver.findElement(By.xpath("(//input[@type=\"text\"])[11]")).sendKeys("dhgfhg");
-		 Thread.sleep(1000);
-		 driver.findElement(By.xpath("(//input[@type=\"text\"])[12]")).sendKeys("Share");
+		 driver.findElement(By.xpath("(//input[@type=\"text\"])[8]")).sendKeys("Share");
 		 Thread.sleep(1000);
 //		 driver.findElement(By.xpath("(//span[contains(.,\"Create Template\")])[2]")).click();
 		 
@@ -92,7 +86,7 @@ public class Create_Template extends Dashboard {
 	        }
 	        return sb.toString();
 	    }
- @Test
+ @Test(priority=2)
 	public void image() throws InterruptedException, AWTException {
 		TestListeners.setDriver(driver);
 		 driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
@@ -150,8 +144,6 @@ public class Create_Template extends Dashboard {
 		 Thread.sleep(1000);
 		 driver.findElement(By.xpath("//span[contains(.,\"Visit website (2)\")]")).click();
 		 Thread.sleep(1000);
-		 driver.findElement(By.xpath("//span[contains(.,\"Copy offer code (1)\")]")).click();
-		 Thread.sleep(1000);
 		 driver.findElement(By.xpath("//span[contains(.,\"Custom button (6)\")]")).click();
 		 Thread.sleep(1000);
 		 driver.findElement(By.xpath("(//input[@type=\"text\"])[4]")).sendKeys("Call");
@@ -163,10 +155,6 @@ public class Create_Template extends Dashboard {
 		 driver.findElement(By.xpath("(//input[@type=\"text\"])[7]")).sendKeys("Redirect");
 		 Thread.sleep(1000);
 		 driver.findElement(By.xpath("//input[@type=\"url\"]")).sendKeys("https://my-planner.in/login");
-		 Thread.sleep(1000);
-		 driver.findElement(By.xpath("(//input[@type=\"text\"])[8]")).sendKeys("Coupon");
-		 Thread.sleep(1000);
-		 driver.findElement(By.xpath("(//input[@type=\"text\"])[9]")).sendKeys("dhgfhg");
 		 Thread.sleep(1000);
 		 driver.findElement(By.xpath("(//input[@type=\"text\"])[10]")).sendKeys("Share");
 		 Thread.sleep(1000);
