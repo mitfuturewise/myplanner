@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Whatsapp.newcampaign">
+      <class name="Whatsapp1.copy.Useexistingclienttags">
         <methods>
-          <include name="CreateTag"/>
+          <include name="Useexistingclienttags"/>
           <include name="setUp"/>
+          <include name="Useexistingclienttags1"/>
+          <include name="Useexistingclienttags3"/>
         </methods>
-      </class> <!-- Whatsapp.newcampaign -->
+      </class> <!-- Whatsapp1.copy.Useexistingclienttags -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

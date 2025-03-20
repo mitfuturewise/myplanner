@@ -1,91 +1,1115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.526]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiYm4zX25iZmhmZHNuZF92X201MjUiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474491998,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Test failed]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.661]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.661]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.661]]>
+    </line>
+    <line>
+      <![CDATA[Test failed]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.661]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiajVfZmQyNDRfNWQyaF9mZGZkYXMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiajVfZmQyNDRfNWQyaF9mZGZkYXMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474522158,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474522158,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiajVfZmQyNDRfNWQyaF9mZGZkYXMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiajVfZmQyNDRfNWQyaF9mZGZkYXMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474522158,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474522158,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.788]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.788]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.788]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.788]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.788]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.788]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.788]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.788]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.788]]>
+    </line>
+    <line>
+      <![CDATA[Test failed]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiNWY1ZGRkaGIyNGRqZ2RuNWYxZHYiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiNWY1ZGRkaGIyNGRqZ2RuNWYxZHYiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiNWY1ZGRkaGIyNGRqZ2RuNWYxZHYiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474547773,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiNWY1ZGRkaGIyNGRqZ2RuNWYxZHYiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474547773,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiNWY1ZGRkaGIyNGRqZ2RuNWYxZHYiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474547773,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiNWY1ZGRkaGIyNGRqZ2RuNWYxZHYiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474547773,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474547773,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiNWY1ZGRkaGIyNGRqZ2RuNWYxZHYiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiNWY1ZGRkaGIyNGRqZ2RuNWYxZHYiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474547773,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiNWY1ZGRkaGIyNGRqZ2RuNWYxZHYiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474547773,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474547773,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474547773,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.919]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.919]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.919]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.919]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.919]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.919]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.919]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.919]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.919]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.919]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.919]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.919]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.919]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.919]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.919]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.919]]>
+    </line>
+    <line>
+      <![CDATA[Test failed]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.1134]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.1134]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.1134]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.1134]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.1134]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.1134]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.1134]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.1134]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.1134]]>
+    </line>
+    <line>
+      <![CDATA[Test failed]]>
+    </line>
+    <line>
+      <![CDATA[Captured expected request ID: 7396.1134]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+    </line>
+    <line>
+      <![CDATA[Status from API response body: 500]]>
+    </line>
+    <line>
+      <![CDATA[Test failed]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-03-13T17:53:19 IST" name="Default suite" finished-at="2025-03-13T17:53:48 IST" duration-ms="28927">
+  <suite started-at="2025-03-20T18:10:59 IST" name="Default suite" finished-at="2025-03-20T18:17:36 IST" duration-ms="396681">
     <groups>
     </groups>
-    <test started-at="2025-03-13T17:53:19 IST" name="Default test" finished-at="2025-03-13T17:53:48 IST" duration-ms="28927">
-      <class name="Whatsapp.newcampaign">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Whatsapp.newcampaign@72f926e6]" started-at="2025-03-13T17:53:19 IST" name="setUp" finished-at="2025-03-13T17:53:24 IST" duration-ms="4970" status="PASS">
+    <test started-at="2025-03-20T18:10:59 IST" name="Default test" finished-at="2025-03-20T18:17:36 IST" duration-ms="396681">
+      <class name="Whatsapp1.copy.Useexistingclienttags">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Whatsapp1.copy.Useexistingclienttags@2145b572]" started-at="2025-03-20T18:10:59 IST" name="setUp" finished-at="2025-03-20T18:11:04 IST" duration-ms="4395" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.526]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiYm4zX25iZmhmZHNuZF92X201MjUiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474491998,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.661]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.661]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.661]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.661]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiajVfZmQyNDRfNWQyaF9mZGZkYXMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiajVfZmQyNDRfNWQyaF9mZGZkYXMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474522158,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474522158,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiajVfZmQyNDRfNWQyaF9mZGZkYXMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiajVfZmQyNDRfNWQyaF9mZGZkYXMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474522158,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474522158,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.788]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.788]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.788]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.788]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.788]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.788]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.788]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.788]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.788]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiNWY1ZGRkaGIyNGRqZ2RuNWYxZHYiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiNWY1ZGRkaGIyNGRqZ2RuNWYxZHYiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiNWY1ZGRkaGIyNGRqZ2RuNWYxZHYiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474547773,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiNWY1ZGRkaGIyNGRqZ2RuNWYxZHYiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474547773,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiNWY1ZGRkaGIyNGRqZ2RuNWYxZHYiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474547773,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiNWY1ZGRkaGIyNGRqZ2RuNWYxZHYiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474547773,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474547773,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiNWY1ZGRkaGIyNGRqZ2RuNWYxZHYiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiNWY1ZGRkaGIyNGRqZ2RuNWYxZHYiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474547773,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiNWY1ZGRkaGIyNGRqZ2RuNWYxZHYiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474547773,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474547773,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474547773,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.919]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.919]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.919]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.919]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.919]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.919]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.919]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.919]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.919]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.919]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.919]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.919]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.919]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.919]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.919]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.919]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoibWdkZmgyZmgyajJkYTVjaGZqZDMiLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjoxLCJoZWFkZXJDb250ZW50IjoiRmFsbGJhY2tWYWx1ZXt7MX19IiwicGxhY2Vob2xkZXJOYW1lIjoiR3JvdXAgSGVhZCBOYW1lIiwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJmYWxsQmFja1ZhbHVlIjoiRmFsbGJhY2t2YWx1ZSIsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474578871,"status":500,"error":null,"message":"Invalid parameter component of type BODY is missing expected field(s) (example)","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.1134]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.1134]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.1134]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.1134]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.1134]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.1134]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.1134]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.1134]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.1134]]>
+            </line>
+            <line>
+              <![CDATA[Captured expected request ID: 7396.1134]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Processing response from expected URL: https://staging.ifanow.in/futurewise/api/v2/web/whatsapp/campaign/create/template/onFly?query=eyJhZHZpc29ySWQiOjE4NjAyLCJvcmdhbml6YXRpb25JZCI6MSwidXNlQ2FzZU1hc3RlcklkIjozNiwidGVtcGxhdGUiOnsidGVtcGxhdGVOYW1lIjoiX2IyaHNfMnNtNWhkM19kczV2NmciLCJjYXRlZ29yeSI6IlVUSUxJVFkiLCJsYW5ndWFnZSI6ImVuIiwidGVtcGxhdGVIZWFkZXJPYmplY3QiOnsiZG9jVXJsIjpudWxsLCJoZWFkZXJUeXBlIjpudWxsLCJoZWFkZXJDb250ZW50IjpudWxsLCJwbGFjZWhvbGRlck5hbWUiOiIiLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOm51bGwsImZhbGxCYWNrVmFsdWUiOm51bGwsImZpbGVUeXBlIjpudWxsfSwidGVtcGxhdGVCb2R5T2JqZWN0Ijp7ImJvZHlDb250ZW50IjoiSGFwcHkgT25hbSwge3sxfX0hXHJcbnt7Mn19IHdpc2hlcyB5b3UgYW5kIHlvdXIgZmFtaWx5IGEgdmVyeSBoYXBweSBPbmFtISBPbmFzaGFtc2FrYWwhIE1heSB0aGlzIGF1c3BpY2lvdXMgb2NjYXNpb24gYnJpbmcgeW91IGpveSwgcHJvc3Blcml0eSwgYW5kIHN1Y2Nlc3MuXHJcbldhcm0gcmVnYXJkcywge3syfX0iLCJib2R5UGxhY2Vob2xkZXJzIjpbeyJzZXF1ZW5jZU51bWJlciI6MSwid2hhdHNhcHBQbGFjZWhvbGRlck1hc3RlcklkIjoxLCJwbGFjZWhvbGRlck5hbWUiOiJHcm91cCBIZWFkIE5hbWUiLCJmYWxsQmFja1ZhbHVlIjoiVXNlciJ9LHsic2VxdWVuY2VOdW1iZXIiOjIsIndoYXRzYXBwUGxhY2Vob2xkZXJNYXN0ZXJJZCI6ODAsInBsYWNlaG9sZGVyTmFtZSI6IkNvbXBhbnkgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJPcmdhbml6YXRpb24ifSx7InNlcXVlbmNlTnVtYmVyIjozLCJ3aGF0c2FwcFBsYWNlaG9sZGVyTWFzdGVySWQiOjEsInBsYWNlaG9sZGVyTmFtZSI6Ikdyb3VwIEhlYWQgTmFtZSIsImZhbGxCYWNrVmFsdWUiOiJ1c2VyIn1dfSwidGVtcGxhdGVGb290ZXJPYmplY3QiOnsiZm9vdGVyVGV4dCI6bnVsbH0sInRlbXBsYXRlQnV0dG9uc09iamVjdCI6eyJidXR0b25zIjpbeyJ0eXBlIjoiUEhPTkVfTlVNQkVSIiwidGV4dCI6IkNhbGwiLCJwaG9uZU51bWJlciI6Iis5MTk4MzQ1NDk1MjgifV19fX0%3D]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"timestamp":1742474716455,"status":500,"error":null,"message":"(#100) The parameter components[0]['type'] is required.","path":null,"payLoad":null}]]>
+            </line>
+            <line>
+              <![CDATA[Status from API response body: 500]]>
+            </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="CreateTag()[pri:0, instance:Whatsapp.newcampaign@72f926e6]" started-at="2025-03-13T17:53:24 IST" name="CreateTag" finished-at="2025-03-13T17:53:48 IST" duration-ms="23737" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: stale element not found in the current frame
-  (Session info: chrome=133.0.6943.143)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fde6e5680b9659df3bd59b86108888e3, clickElement {id=f.76E7BD5182682B9F935904073546228A.d.A3F08E74F0134838395E01FC228CD41E.e.243}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.143, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61560}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61560/devtoo..., se:cdpVersion: 133.0.6943.143, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (fde6e5680b9659df3bd59b86108888e3)] -> xpath: //div[normalize-space(text())='Sandeep Kamble']/following::*[1]]
-Session ID: fde6e5680b9659df3bd59b86108888e3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=133.0.6943.143)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fde6e5680b9659df3bd59b86108888e3, clickElement {id=f.76E7BD5182682B9F935904073546228A.d.A3F08E74F0134838395E01FC228CD41E.e.243}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.143, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61560}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61560/devtoo..., se:cdpVersion: 133.0.6943.143, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (fde6e5680b9659df3bd59b86108888e3)] -> xpath: //div[normalize-space(text())='Sandeep Kamble']/following::*[1]]
-Session ID: fde6e5680b9659df3bd59b86108888e3
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at Whatsapp.newcampaign.CreateTag(newcampaign.java:218)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+        <test-method signature="Useexistingclienttags()[pri:1, instance:Whatsapp1.copy.Useexistingclienttags@2145b572]" started-at="2025-03-20T18:11:04 IST" name="Useexistingclienttags" finished-at="2025-03-20T18:12:04 IST" duration-ms="60262" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Test failed]]>
+            </line>
+            <line>
+              <![CDATA[Test failed]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- CreateTag -->
-      </class> <!-- Whatsapp.newcampaign -->
+        </test-method> <!-- Useexistingclienttags -->
+        <test-method signature="Useexistingclienttags1()[pri:2, instance:Whatsapp1.copy.Useexistingclienttags@2145b572]" started-at="2025-03-20T18:12:04 IST" name="Useexistingclienttags1" finished-at="2025-03-20T18:13:01 IST" duration-ms="56734" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test failed]]>
+            </line>
+            <line>
+              <![CDATA[Test failed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Useexistingclienttags1 -->
+        <test-method signature="Useexistingclienttags3()[pri:3, instance:Whatsapp1.copy.Useexistingclienttags@2145b572]" started-at="2025-03-20T18:13:01 IST" name="Useexistingclienttags3" finished-at="2025-03-20T18:17:36 IST" duration-ms="275248" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test failed]]>
+            </line>
+            <line>
+              <![CDATA[Test failed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Useexistingclienttags3 -->
+      </class> <!-- Whatsapp1.copy.Useexistingclienttags -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

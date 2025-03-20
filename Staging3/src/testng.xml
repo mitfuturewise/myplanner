@@ -2,19 +2,14 @@
 <suite name="MyTestSuite">
 
     <!-- First, run createonfly tests in this order -->
-    <test name="Whatsapp">
+    <test name="Whatsapp1.copy">
         <classes>
-			<class name="Whatsapp.header"/>
-			<class name="Whatsapp.body"/>
-			<class name="Whatsapp.Buttons"/>
-    
+			<class name="Whatsapp1.copy.Useexistingclienttags"/>  
         </classes>
     </test>
-    <test name="createonfly">
+   <test name="createonfly1.copy">
         <classes>
-			<class name="createonfly.header"/>
-            <class name="createonfly.body"/>
-            <class name="createonfly.Buttons"/>
+			<class name="createonfly1.copy.Useexistingclienttags"/>  
         </classes>
     </test>
 

@@ -112,7 +112,7 @@ public class body extends Login {
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("(//p[contains(.,'Add Variable')])")).click();//click on add variable in body section
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("(//mat-select[@formcontrolname=\"datapoint\"])[3]")).click();//select dropdown of datapoint
+		driver.findElement(By.xpath("(//mat-select[@formcontrolname=\"datapoint\"])")).click();//select dropdown of datapoint
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("(//span[@class=\"mat-option-text\"])[1]")).click();//select first option from datapoint dropdown
 		
@@ -195,16 +195,16 @@ public class body extends Login {
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("(//p[contains(.,'Add Variable')])")).click();//click on add variable in body section
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("(//mat-select[@formcontrolname=\"datapoint\"])[3]")).click();//select dropdown of datapoint
+		driver.findElement(By.xpath("(//mat-select[@formcontrolname=\"datapoint\"])")).click();//select dropdown of datapoint
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("(//span[@class=\"mat-option-text\"])[1]")).click();//select first option from datapoint dropdown
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("(//input[@formcontrolname=\"fallbackValue\"])[3]")).sendKeys("user");
+		driver.findElement(By.xpath("(//input[@formcontrolname=\"fallbackValue\"])")).sendKeys("user");
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("(//input[@aria-required=\"false\"])[2]")).sendKeys("Thank you for choosing us.");
 		ChromeDriver chromeDriver = (ChromeDriver) driver;
 		DevTools devTools = chromeDriver.getDevTools();
-		devTools.createSession();
+		devTools.createSession();	
 
 		// Use an AtomicInteger to store the response status code (-1 means not yet set)
 		// Atomic variables for thread-safe response tracking

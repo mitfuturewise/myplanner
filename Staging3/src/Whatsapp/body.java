@@ -193,7 +193,7 @@ public class body extends Login {
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("(//span[@class=\"mat-option-text\"])[1]")).click();//select first option from datapoint dropdown
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("(//input[@formcontrolname=\"fallbackValue\"])[3]")).sendKeys("user");
+		driver.findElement(By.xpath("(//input[@formcontrolname=\"fallbackValue\"])")).sendKeys("user");
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("(//input[@aria-required=\"false\"])[2]")).sendKeys("Thank you for choosing us.");
 		ChromeDriver chromeDriver = (ChromeDriver) driver;
