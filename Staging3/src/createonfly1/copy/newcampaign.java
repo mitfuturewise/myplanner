@@ -22,18 +22,8 @@ public class newcampaign extends Login{
 	 private static int campaignCounter = 1;
 	 wfnp button = new wfnp();
 	 whatsapp whatsapp=new whatsapp();
- public static String generateUniqueTemplateName(int length) {
-	        String characters = "abdcf_54121s5d4ghjdfvdjshanb_jbdfbdsmvn6533d12f32hdfgjhsdf___hgdfnsdbf";
-	        Random random = new Random();
-	        StringBuilder sb = new StringBuilder();
-	        for (int i = 0; i < length; i++) {
-	            int index = random.nextInt(characters.length());
-	            sb.append(characters.charAt(index));
-	        }
-	        return sb.toString();
-	    }
- @Test
- public void newCampaign() throws InterruptedException {
+@Test
+ public void createNewCampaignFlow() throws InterruptedException {
 		TestListeners.setDriver(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.findElement(By.xpath("//span[contains(.,\"New Campaign\")]")).click();//new campaign
@@ -71,43 +61,16 @@ public class newcampaign extends Login{
 	    Thread.sleep(1000);
 	    
 	}
- @Test
- public void Createonfly() throws InterruptedException {
-		TestListeners.setDriver(driver);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		driver.findElement(By.xpath("//span[contains(.,\"New Campaign\")]")).click();//new campaign
-		//enter campaign name
-		if (campaignCounter > 100) {
-	        campaignCounter = 1;
-	    }
-	    // Build the campaign name
-	    String uniqueCampaignName = "Campaign_" + campaignCounter;
-	    campaignCounter++;
-
-	    // Locate the campaign input field and send the campaign name
-	    driver.findElement(By.xpath("//input[@aria-required='true']")).sendKeys(uniqueCampaignName);
-		driver.findElement(By.xpath("(//span[@class=\"mat-radio-inner-circle\"])[2]")).click();//select one time radio button
-		driver.findElement(By.xpath("(//button[contains(text(),\"NEXT STEP\")])")).click();//click on next step
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("(//mat-select[@aria-required=\"true\"])[1]")).click();	//click dropdown button of  use case
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("(//span[@class=\"mat-option-text\"])[2]")).click();//select use case
-//		Thread.sleep(1000);
-//		driver.findElement(By.xpath("(//input[@aria-required=\"true\"])")).click();//click on calender to select date
-		driver.findElement(By.xpath("(//button[contains(.,\"NEXT STEP\")])")).click();//click next step(use case selection)
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//button[contains(text(),\"NEXT STEP\")]")).click();//click next step (Audience selection)
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//p[contains(.,\"Create on the Fly\")]")).click();//click on create on fly
-		Thread.sleep(1000);
-		//for template name
-		String templateName = generateUniqueTemplateName(20);
-	    
-	    // Locate the input field using the XPath and enter the unique template name
-	    WebElement inputField = driver.findElement(By.xpath("//input[@formcontrolname='templateName']"));
-	    inputField.clear();
-	    inputField.sendKeys(templateName);
-	}
+public static String generateUniqueTemplateName(int length) {
+    String characters = "abdcf_54121s5d4ghjdfvdjshanb_jbdfbdsmvn6533d12f32hdfgjhsdf___hgdfnsdbf";
+    Random random = new Random();
+    StringBuilder sb = new StringBuilder();
+    for (int i = 0; i < length; i++) {
+        int index = random.nextInt(characters.length());
+        sb.append(characters.charAt(index));
+    }
+    return sb.toString();
+}
  @Test
  public void Useexistingclienttags() throws InterruptedException {
 		TestListeners.setDriver(driver);
@@ -143,10 +106,9 @@ public class newcampaign extends Login{
 //		driver.findElement(By.xpath("(//label[@class=\"mat-checkbox-layout\"])[1]")).click();
 //		Thread.sleep(1000);
 //		driver.findElement(By.xpath("(//label[@class=\"mat-checkbox-layout\"])[2]")).click();
+        driver.findElement(By.xpath("//button[contains(text(),\"NEXT STEP\")]")).click();//click next step (Audience selection)
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//button[contains(text(),\"NEXT STEP\")]")).click();//click next step (Audience selection)
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//p[contains(text(),\"Modify Template\")]")).click();//modify template
+		driver.findElement(By.xpath("//p[contains(.,\"Create on the Fly\")]")).click();//click on create on fly
 		Thread.sleep(1000);
 		//for template name
 		String templateName = generateUniqueTemplateName(20);
@@ -286,10 +248,11 @@ public class newcampaign extends Login{
         } catch (Exception e) {
             e.printStackTrace();
         } 
+        
     // Safe Click method to handle stale element exceptions
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//button[@type=\"undefined\"])"))).click();//click next step (Audience selection)
 		Thread.sleep(1000);
-		  WebElement modifyTemplateButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[contains(text(),'Modify Template')]")));
+		  WebElement modifyTemplateButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[contains(.,\"Create on the Fly\")]")));
 
           // ✅ Scroll into view before clicking
           ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", modifyTemplateButton);

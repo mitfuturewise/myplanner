@@ -40,7 +40,6 @@ public void headerisselectedasnone() throws InterruptedException, AWTException {
 	Thread.sleep(1000);
 	driver.findElement(By.xpath("(//span[@class=\"mat-option-text\"])[1]")).click();//select text from header dropdown
 	Thread.sleep(1000);
-	bodytext.bodytext();
 }
 @Test(priority = 2)
 public void textWithoutenteringanytext() throws InterruptedException, AWTException {
@@ -50,7 +49,6 @@ public void textWithoutenteringanytext() throws InterruptedException, AWTExcepti
 	Thread.sleep(1000);
 	driver.findElement(By.xpath("(//span[@class=\"mat-option-text\"])[2]")).click();//select text from header dropdown
 	Thread.sleep(1000);
-	bodytext.bodytext();
 //	Actions a = new Actions(driver);
 //	Robot r=new Robot();
 //	r.keyPress(KeyEvent.VK_CONTROL);
@@ -71,7 +69,6 @@ public void testWithFallbackValue() throws InterruptedException {
 	driver.findElement(By.xpath("(//span[@class=\"mat-option-text\"])[2]")).click();//select text from header dropdown
 	 driver.findElement(By.xpath("(//input[@autocomplete=\"off\"])[4]"))
      .sendKeys("FallbackValue");
-	 bodytext.bodytext();
 }
 
 @Test(priority = 4)
@@ -85,7 +82,6 @@ public void HeaderTextandAddVariable() throws InterruptedException {
      .sendKeys("FallbackValue");
 	 driver.findElement(By.xpath("(//p[contains(.,'Add Variable')])[1]")).click();//click on add variable
 //	footer.footer();
-	 bodytext.bodytext();
 }
 @Test(priority = 5)
 public void HeaderTextandAddVariablewithselectdapoint() throws InterruptedException {
@@ -103,7 +99,6 @@ public void HeaderTextandAddVariablewithselectdapoint() throws InterruptedExcept
 	 driver.findElement(By.xpath("(//mat-select[@formcontrolname=\"headerPlaceholdervariable\"])")).click();//click to select datapoint
 	 Thread.sleep(1000);
 	 driver.findElement(By.xpath("(//span[@class=\"mat-option-text\"])[1]")).click();//click to select 1st datapoint
-	 bodytext.bodytext();	
 }
 @Test(priority = 6)
 public void HeaderTextandAddVariablewithselectdapointandfallbackvalue() throws InterruptedException {
@@ -124,7 +119,6 @@ public void HeaderTextandAddVariablewithselectdapointandfallbackvalue() throws I
 	 Thread.sleep(1000);
 	 driver.findElement(By.xpath("(//input[@formcontrolname=\"headerFallbackvalue\"])")).sendKeys("Fallbackvalue");//add text to fallbackvalue
 	 //	footer.footer();
-	 bodytext.bodytext();
 }
 //@Test(priority = 7)
 //public void image() throws InterruptedException {

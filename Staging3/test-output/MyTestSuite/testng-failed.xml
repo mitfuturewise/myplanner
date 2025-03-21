@@ -1,40 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [MyTestSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Whatsapp(failed)">
+  <test thread-count="5" name="createonfly1.copy(failed)">
     <classes>
-      <class name="Whatsapp.header">
+      <class name="createonfly1.copy.Useexistingclienttags">
         <methods>
-          <include name="wheaderisselectedasnone"/>
+          <include name="Useexistingclienttags3"/>
+          <include name="Useexistingclienttags1"/>
+          <include name="Useexistingclienttags"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- Whatsapp.header -->
-      <class name="Whatsapp.Buttons">
-        <methods>
-          <include name="wphonenumberbuttontext"/>
-          <include name="wtestbuttonsclickpn"/>
-          <include name="wtestbuttonsclickqr"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- Whatsapp.Buttons -->
+      </class> <!-- createonfly1.copy.Useexistingclienttags -->
     </classes>
-  </test> <!-- Whatsapp(failed) -->
-  <test thread-count="5" name="createonfly(failed)">
+  </test> <!-- createonfly1.copy(failed) -->
+  <test thread-count="5" name="Whatsapp1.copy(failed)">
     <classes>
-      <class name="createonfly.body">
+      <class name="Whatsapp1.copy.Useexistingclienttags">
         <methods>
-          <include name="selectdatapointandfallbackvalue"/>
-          <include name="selectdatapoint"/>
+          <include name="Useexistingclienttags"/>
           <include name="setUp"/>
+          <include name="Useexistingclienttags1"/>
+          <include name="Useexistingclienttags3"/>
         </methods>
-      </class> <!-- createonfly.body -->
-      <class name="createonfly.Buttons">
-        <methods>
-          <include name="testbuttonsclickqr"/>
-          <include name="testbuttonsclickpn"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- createonfly.Buttons -->
+      </class> <!-- Whatsapp1.copy.Useexistingclienttags -->
     </classes>
-  </test> <!-- createonfly(failed) -->
+  </test> <!-- Whatsapp1.copy(failed) -->
 </suite> <!-- Failed suite [MyTestSuite] -->

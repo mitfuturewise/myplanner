@@ -38,7 +38,7 @@ import Whatsapp.newcampaign;
 
 @Listeners(TestListeners.class)
 public class Useexistingclienttags extends Login{
-	newcampaign createcamp = new newcampaign();
+	createonfly1.copy.newcampaign createcamp = new createonfly1.copy.newcampaign();
 	wfnp wfnp = new wfnp();
 	body body = new body();
 	header header = new header();
@@ -50,7 +50,7 @@ public class Useexistingclienttags extends Login{
 		TestListeners.setDriver(driver);
 		wfnp.whatsapp();
 		Thread.sleep(1000);
-		createcamp.newCampaign();
+		createcamp.createNewCampaignFlow();
 		Thread.sleep(1000);
 		header.headerisselectedasnone();
 		Thread.sleep(1000);
@@ -62,7 +62,7 @@ public class Useexistingclienttags extends Login{
 		Thread.sleep(1000);
 		wfnp.whatsapp();
 		Thread.sleep(1000);
-		createcamp.newCampaign();
+		createcamp.createNewCampaignFlow();
 		Thread.sleep(1000);
 		header.HeaderTextandAddVariablewithselectdapointandfallbackvalue();
 		Thread.sleep(1000);

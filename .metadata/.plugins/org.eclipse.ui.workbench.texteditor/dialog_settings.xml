@@ -10,8 +10,12 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="ChromeDriver chromeDriver = (ChromeDriver) driver;"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="//textarea[@aria-required=&apos;false&apos;"/>
+			<item value="websiteurlbuttontextcontent"/>
+			<item value="wphonenumberbuttontextcontent"/>
+			<item value="phonenumberbuttontext"/>
 			<item value="ChromeDriver chromeDriver = (ChromeDriver) driver;"/>
 			<item value="AtomicInteger responseStatus = new AtomicInteger(-1);"/>
 		</list>

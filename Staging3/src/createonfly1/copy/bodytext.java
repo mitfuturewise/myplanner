@@ -18,7 +18,7 @@ public class bodytext extends Login {
     }
     @Test
     // Non-static method that encapsulates the test logic
-    public void bodytext() {
+    public void bodytext(){
         // Initialize ChromeDriver (set the system property if needed)
         
         String originalText = "Dear User,\r\n"

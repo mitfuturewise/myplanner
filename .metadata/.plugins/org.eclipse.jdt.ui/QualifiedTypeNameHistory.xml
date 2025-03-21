@@ -17,4 +17,9 @@
     <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
     <fullyQualifiedTypeName name="Swiftchat.bodytext"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="Whatsapp.header"/>
+    <fullyQualifiedTypeName name="Whatsapp1.copy.devtools"/>
+    <fullyQualifiedTypeName name="createonfly1.copy.newcampaign"/>
+    <fullyQualifiedTypeName name="createonfly1.copy.wfnp"/>
+    <fullyQualifiedTypeName name="createonfly1.copy.body"/>
 </qualifiedTypeNameHistroy>

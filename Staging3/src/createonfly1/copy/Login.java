@@ -25,9 +25,9 @@ public class Login {
 	    @BeforeClass
 	    public void setUp() throws InterruptedException {
 	        // Initialize the driver and assign it to the class field
-	    	TestListeners.setDriver(driver);
+	    	
 	        driver = new ChromeDriver();
-
+	        TestListeners.setDriver(driver);
 	        // Open the login page and perform login
 	        driver.get("https://test.ifanow.in/login");
 	        driver.manage().window().maximize();

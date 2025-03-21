@@ -41,8 +41,6 @@ import Staging3.TestListeners;
 		public void addwebsiteurl() throws InterruptedException, AWTException {
 			TestListeners.setDriver(driver);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			bodytext.bodytext();
-			Thread.sleep(1000);
 			driver.findElement(By.xpath("(//mat-select[@formcontrolname=\"selectedButtonType\"])")).click();//click on dropdown of buttons
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("(//span[@class=\"mat-option-text\"])[1]")).click();//select websiteurlbutton
@@ -53,8 +51,6 @@ import Staging3.TestListeners;
 		public void addwebsiteurlbuttontext() throws InterruptedException, AWTException {
 			TestListeners.setDriver(driver);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			bodytext.bodytext();
-			Thread.sleep(1000);
 			driver.findElement(By.xpath("(//mat-select[@formcontrolname=\"selectedButtonType\"])")).click();//click on dropdown of buttons
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("(//span[@class=\"mat-option-text\"])[1]")).click();//select websiteurlbutton
@@ -66,8 +62,7 @@ import Staging3.TestListeners;
 		public void addwebsiteurlbuttontextcontent() throws InterruptedException, AWTException {
 			TestListeners.setDriver(driver);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-			bodytext.bodytext();
-			Thread.sleep(1000);
+			
 			driver.findElement(By.xpath("(//mat-select[@formcontrolname=\"selectedButtonType\"])")).click();//click on dropdown of buttons
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("(//span[@class=\"mat-option-text\"])[1]")).click();//select websiteurlbutton
@@ -81,8 +76,7 @@ import Staging3.TestListeners;
 		public void phonenumber() throws InterruptedException, AWTException {
 			TestListeners.setDriver(driver);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			bodytext.bodytext();
-			Thread.sleep(1000);
+			
 			driver.findElement(By.xpath("(//mat-select[@formcontrolname=\"selectedButtonType\"])")).click();//click on dropdown of buttons
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("(//span[@class=\"mat-option-text\"])[2]")).click();//select phonenumber
@@ -92,8 +86,7 @@ import Staging3.TestListeners;
 		public void phonenumberbuttontext() throws InterruptedException, AWTException {
 			TestListeners.setDriver(driver);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			bodytext.bodytext();
-			Thread.sleep(1000);
+			
 			driver.findElement(By.xpath("(//mat-select[@formcontrolname=\"selectedButtonType\"])")).click();//click on dropdown of buttons
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("(//span[@class=\"mat-option-text\"])[2]")).click();//select phonenumber
@@ -105,8 +98,7 @@ import Staging3.TestListeners;
 		public void phonenumberbuttontextcontent() throws InterruptedException, AWTException {
 			TestListeners.setDriver(driver);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			bodytext.bodytext();
-			Thread.sleep(1000);
+			
 			driver.findElement(By.xpath("(//mat-select[@formcontrolname=\"selectedButtonType\"])")).click();//click on dropdown of buttons
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("(//span[@class=\"mat-option-text\"])[2]")).click();//select phonenumber
@@ -120,8 +112,7 @@ import Staging3.TestListeners;
 		public void quickurl() throws InterruptedException, AWTException {
 			TestListeners.setDriver(driver);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			bodytext.bodytext();
-			Thread.sleep(1000);
+			
 			driver.findElement(By.xpath("(//mat-select[@formcontrolname=\"selectedButtonType\"])")).click();//click on dropdown of buttons
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("(//span[@class=\"mat-option-text\"])[3]")).click();//select quickreplybutton
@@ -131,8 +122,7 @@ import Staging3.TestListeners;
 		public void quickurlbuttontextcontent() throws InterruptedException, AWTException {
 			TestListeners.setDriver(driver);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			bodytext.bodytext();
-			Thread.sleep(1000);
+			
 			driver.findElement(By.xpath("(//mat-select[@formcontrolname=\"selectedButtonType\"])")).click();//click on dropdown of buttons
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("(//span[@class=\"mat-option-text\"])[3]")).click();//select quickreplybutton
