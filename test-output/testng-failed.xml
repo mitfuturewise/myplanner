@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Myplanner.addclient">
+      <class name="Myplanner.People">
         <methods>
-          <include name="addclient"/>
+          <include name="testPeopleProfileEditing"/>
+          <include name="client"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- Myplanner.addclient -->
+      </class> <!-- Myplanner.People -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

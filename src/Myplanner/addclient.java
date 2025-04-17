@@ -17,9 +17,9 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 @Listeners (TestListeners.class)
+@Test(priority=1)
 public class addclient extends Login{
-	@Test(priority=1)
-	public  void addclient() throws InterruptedException {
+	public void addclient() throws InterruptedException {
 		TestListeners.setDriver(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.findElement(By.xpath("(//span[contains(.,\"People\")])[3]")).click();//click to people option
@@ -38,7 +38,11 @@ public class addclient extends Login{
 		search1.sendKeys("sonesh");
 		Thread.sleep(1000);
 		search1.clear();
-		Thread.sleep(1000);
+	}
+	@Test(priority=2)
+	public  void addclient1() throws InterruptedException {
+		TestListeners.setDriver(driver);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.findElement(By.xpath("//span[contains(.,\" ADD NEW \")]")).click();
 		String today = java.time.LocalDate.now().toString().replaceAll("-", "");
         String testName = "Test" + today;

@@ -17,18 +17,6 @@ public class People extends Login {
 	@Test(priority = 2)
 	public void testPeopleProfileEditing()  throws InterruptedException {
 //        JavascriptExecutor j=(JavascriptExecutor) driver;
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 //        Thread.sleep(2000);
 //        j.executeScript("window.scrollBy(0,8000)");
 //        Thread.sleep(2000);
