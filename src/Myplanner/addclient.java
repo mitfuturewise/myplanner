@@ -43,6 +43,7 @@ public class addclient extends Login{
 	public  void addclient1() throws InterruptedException {
 		TestListeners.setDriver(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.findElement(By.xpath("(//span[contains(.,\"People\")])[3]")).click();
 		driver.findElement(By.xpath("//span[contains(.,\" ADD NEW \")]")).click();
 		String today = java.time.LocalDate.now().toString().replaceAll("-", "");
         String testName = "Test" + today;
