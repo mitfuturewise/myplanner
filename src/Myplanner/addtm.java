@@ -41,6 +41,8 @@ public class addtm extends Login{
         driver.findElement(By.xpath("(//span[@class=\"mat-option-text\"])[2]")).click();//select 1st option from tag line dropdown
         Thread.sleep(1000);
         driver.findElement(By.xpath("(//button[@type=\"undefined\"])"));
+        
+        
         WebElement searchBox = wait.until(ExpectedConditions.elementToBeClickable(
         	    By.xpath("//input[@placeholder='Type to search client']")));
         	searchBox.clear();
