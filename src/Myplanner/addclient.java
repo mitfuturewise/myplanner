@@ -9,6 +9,7 @@ import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -21,7 +22,7 @@ import org.testng.annotations.Test;
 public class addclient extends Login{
 	public void addclient() throws InterruptedException {
 		TestListeners.setDriver(driver);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.findElement(By.xpath("(//span[contains(.,\"People\")])[3]")).click();//click to people option
 		WebElement search = driver.findElement(By.xpath("//input[@role=\"combobox\"]"));//search client and familymember
 		Thread.sleep(1000);
@@ -42,8 +43,12 @@ public class addclient extends Login{
 	@Test(priority=2)
 	public  void addclient1() throws InterruptedException {
 		TestListeners.setDriver(driver);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		driver.findElement(By.xpath("(//span[contains(.,\"People\")])[3]")).click();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	    driver.navigate().refresh();
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement people = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[contains(.,\"People\")])[3]")));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", people);
+        WebElement add = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,\" ADD NEW \")]")));
 		driver.findElement(By.xpath("//span[contains(.,\" ADD NEW \")]")).click();
 		String today = java.time.LocalDate.now().toString().replaceAll("-", "");
         String testName = "Test" + today;
@@ -54,7 +59,6 @@ public class addclient extends Login{
         WebElement panField = driver.findElement(By.xpath("//input[@placeholder=\"Enter pan\"]"));
         panField.sendKeys(uniquePAN);
         Thread.sleep(1000);
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         WebElement dobInput = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@formcontrolname='dobAsPerRecord']")));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", dobInput);
         Thread.sleep(300);
@@ -123,26 +127,37 @@ public class addclient extends Login{
         Thread.sleep(1000);
         driver.findElement(By.xpath("(//button[@type=\"undefined\"])[2]")).click();
         Thread.sleep(1000);
-        WebElement searchBox = wait.until(ExpectedConditions.elementToBeClickable(
-        	    By.xpath("//input[@placeholder='Type to search client']")));
-        	searchBox.clear();
-        	searchBox.sendKeys(testName);
-        	Thread.sleep(1000); // small wait for list to load
+//        WebElement searchBox = wait.until(ExpectedConditions.elementToBeClickable(
+//        	    By.xpath("//input[@placeholder='Type to search client']")));
+//        	searchBox.clear();
+//        	searchBox.sendKeys(testName);
+//        	Thread.sleep(1000); // small wait for list to load
 
         	// Step 2: Keep deleting while test entries exist
         	while (true) {
-        		searchBox = wait.until(ExpectedConditions.elementToBeClickable(
-        		        By.xpath("//input[@placeholder='Type to search client']")));
-        		    searchBox.clear();
-        		    searchBox.sendKeys(testName);
-        		    Thread.sleep(1000); // Wait for results to load
+        	    WebElement searchBox1 = wait.until(ExpectedConditions.elementToBeClickable(
+        	        By.xpath("//input[@placeholder='Type to search client']")));
 
-        		    List<WebElement> rows = driver.findElements(By.xpath("//div[contains(text(),'" + testName + "')]/ancestor::tr"));
+        	    searchBox1.clear(); // Clear old value
+        	    searchBox1.sendKeys(testName);
 
-        	    if (rows.isEmpty()) {
-        	        System.out.println("No more test entries found.");
-        	        break;
+        	    // 🔁 Wait until the client row with testName is visible
+        	    try {
+        	        wait.until(ExpectedConditions.presenceOfElementLocated(
+        	            By.xpath("//div[contains(text(),'" + testName + "')]/ancestor::tr")));
+
+        	        List<WebElement> rows = driver.findElements(
+        	            By.xpath("//div[contains(text(),'" + testName + "')]/ancestor::tr"));
+
+        	        if (!rows.isEmpty()) {
+        	            // ✅ Success — result loaded
+        	            break;
+        	        }
+        	    } catch (TimeoutException e) {
+        	        // Retry sending if not found in time
+        	        System.out.println("Result not found, retrying...");
         	    }
+        	}
 
         	    // Find the first matching row’s menu button and click
         	    WebElement menuBtn = wait.until(ExpectedConditions.elementToBeClickable(
@@ -193,7 +208,7 @@ public class addclient extends Login{
 //        	  ((JavascriptExecutor) driver).executeScript("arguments[0].click();", day);
         
 
-	}
+
 	public static String generateFakePAN() {
         String letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         Random random = new Random();
